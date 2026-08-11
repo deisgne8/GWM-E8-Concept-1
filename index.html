@@ -6,8 +6,8 @@
   <meta name="description" content="GWM Middle East concept homepage">
   <title>GWM Middle East</title>
   <link rel="icon" href="assets/brand/gwm-logo-standard.png" type="image/png">
-  <link rel="stylesheet" href="css/styles.css?v=40">
-  <script src="js/app.js?v=40" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=54">
+  <script src="js/app.js?v=44" defer></script>
 </head>
 <body class="intro-active">
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -26,7 +26,7 @@
         <img class="site-logo__dark" src="assets/brand/gwm-logo-standard.png" alt="GWM" width="110" height="48">
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#vehicles">Vehicles</a>
+        <a href="vehicles.html">Vehicles</a>
         <a href="#owners">Owners</a>
         <a href="#regional-network">Fleet &amp; Business</a>
         <a href="#technology">Technology</a>
@@ -37,7 +37,7 @@
           <img src="assets/icons/globe.svg" alt="" width="16" height="16">
         </button>
         <button class="language-button" type="button" aria-label="Switch to Arabic" data-language-toggle>عربي</button>
-        <button class="icon-button header-search" type="button" aria-label="Search" data-placeholder-action="Search will be connected when an approved content source is available.">
+        <button class="icon-button header-search" type="button" aria-label="Search and Ask GWM" data-ask-gwm>
           <img src="assets/icons/search.svg" alt="" width="20" height="20">
         </button>
         <button class="button button--header" type="button" data-test-drive>Book a test drive</button>
@@ -58,11 +58,11 @@
       <div class="site-menu__grid">
         <section>
           <p class="menu-heading">By family</p>
-          <a href="#vehicles">HAVAL</a><a href="#vehicles">TANK</a><a href="#vehicles">WEY</a><a href="#vehicles">ORA</a><a href="#vehicles">POER</a>
+          <a href="vehicles.html?brand=HAVAL">HAVAL</a><a href="vehicles.html?brand=TANK">TANK</a><a href="vehicles.html?brand=WINGLE">WINGLE</a><a href="vehicles.html?brand=POER">POER</a>
         </section>
         <section>
           <p class="menu-heading">Explore</p>
-          <a href="#vehicles">Vehicle range</a><a href="#powertrains">Powertrains</a><a href="#owners">GWM CARE</a><a href="#regional-network">Find a dealer</a>
+          <a href="vehicles.html">Vehicle range</a><a href="#powertrains">Powertrains</a><a href="#owners">GWM CARE</a><a href="#regional-network">Find a dealer</a>
         </section>
         <section>
           <p class="menu-heading">Middle East</p>
@@ -86,7 +86,7 @@
             <p class="hero-slide__copy">Discover the GWM HAVAL H9, designed for confident family journeys and off-road exploration.</p>
             <div class="button-group">
               <button class="button" type="button" data-test-drive>Book a test drive</button>
-              <a class="button button--outline" href="#vehicles">Explore the range</a>
+              <a class="button button--outline" href="vehicles.html">Explore the range</a>
             </div>
           </div>
           <div class="hero-slide__identity"><span>GWM HAVAL H9</span><strong>Born for Off-Roading</strong></div>
@@ -98,7 +98,7 @@
             <p class="eyebrow eyebrow--inverse">Go with more</p>
             <h2>Designed to go beyond.</h2>
             <p class="hero-slide__copy">Meet the GWM HAVAL V7, a bold new expression of adventure for the Middle East.</p>
-            <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="#vehicles">Explore the range</a></div>
+            <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore the range</a></div>
           </div>
           <div class="hero-slide__identity"><span>GWM HAVAL V7</span><strong>Built to Explore</strong></div>
         </article>
@@ -109,7 +109,7 @@
             <p class="eyebrow eyebrow--inverse">Go with more</p>
             <h2>More for every day.</h2>
             <p class="hero-slide__copy">The GWM HAVAL Jolion Max brings contemporary design and everyday versatility together.</p>
-            <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="#vehicles">Explore the range</a></div>
+            <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore the range</a></div>
           </div>
           <div class="hero-slide__identity"><span>GWM HAVAL JOLION MAX</span><strong>More of Everything</strong></div>
         </article>
@@ -131,23 +131,23 @@
           <button id="brand-tab-poer" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="POER" tabindex="-1">POER</button>
         </div>
         <div class="vehicle-grid" id="vehicle-grid" aria-live="polite" aria-labelledby="brand-tab-haval">
-          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h9-studio.png" alt="Black GWM HAVAL H9 in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H9</h3><span>Off-road SUV · Details on request</span><a href="product.html?model=h9">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h7-studio.png" alt="Silver GWM HAVAL H7 in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H7</h3><span>SUV · Details on request</span><a href="product.html?model=h7">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h6-studio.png" alt="GWM HAVAL H6 facing left in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H6</h3><span>SUV · Details on request</span><a href="product.html?model=h6">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-jolion-max-studio.png" alt="GWM HAVAL Jolion Max facing left in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>Jolion Max</h3><span>SUV · Details on request</span><a href="product.html?model=jolion-max">Explore model →</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h9-studio.png" alt="Black GWM HAVAL H9 in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H9</h3><span>Off-road SUV · Details on request</span><a href="product.html?model=h9">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h7-studio.png" alt="Silver GWM HAVAL H7 in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H7</h3><span>SUV · Details on request</span><a href="product.html?model=h7">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h6-studio.png" alt="GWM HAVAL H6 facing left in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H6</h3><span>SUV · Details on request</span><a href="product.html?model=h6">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-jolion-max-studio.png" alt="GWM HAVAL Jolion Max facing left in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>Jolion Max</h3><span>SUV · Details on request</span><a href="product.html?model=jolion-max">Explore model</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-300-studio.png" alt="GWM TANK 300 in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 300</h3><span>SUV · Details on request</span><a href="product.html?model=tank-300">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-400-studio.png" alt="GWM TANK 400 facing left in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 400</h3><span>SUV · Details on request</span><a href="product.html?model=tank-400">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-500-studio.png" alt="GWM TANK 500 in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 500</h3><span>Premium SUV · Details on request</span><a href="product.html?model=tank-500">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-700-studio.png" alt="GWM TANK 700 facing left in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 700</h3><span>SUV · Details on request</span><a href="product.html?model=tank-700">Explore model →</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-300-studio.png" alt="GWM TANK 300 in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 300</h3><span>SUV · Details on request</span><a href="product.html?model=tank-300">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-400-studio.png" alt="GWM TANK 400 facing left in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 400</h3><span>SUV · Details on request</span><a href="product.html?model=tank-400">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-500-studio.png" alt="GWM TANK 500 in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 500</h3><span>Premium SUV · Details on request</span><a href="product.html?model=tank-500">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-700-studio.png" alt="GWM TANK 700 facing left in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 700</h3><span>SUV · Details on request</span><a href="product.html?model=tank-700">Explore model</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-5-studio.png" alt="GWM Wingle 5 facing left in a front three-quarter studio view" loading="lazy"><div><p>WINGLE</p><h3>Wingle 5</h3><span>Pickup · Details on request</span><a href="product.html?model=wingle-5">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-7-studio.png" alt="GWM Wingle 7 facing left in a front three-quarter studio view" loading="lazy"><div><p>WINGLE</p><h3>Wingle 7</h3><span>Pickup · Details on request</span><a href="product.html?model=wingle-7">Explore model →</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-5-studio.png" alt="GWM Wingle 5 facing left in a front three-quarter studio view" loading="lazy"><div><p>WINGLE</p><h3>Wingle 5</h3><span>Pickup · Details on request</span><a href="product.html?model=wingle-5">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-7-studio.png" alt="GWM Wingle 7 facing left in a front three-quarter studio view" loading="lazy"><div><p>WINGLE</p><h3>Wingle 7</h3><span>Pickup · Details on request</span><a href="product.html?model=wingle-7">Explore model</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-poer-hi4-t-studio.png" alt="GWM POER Hi4-T facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Hi4-T</h3><span>Pickup · Details on request</span><a href="product.html?model=poer-hi4-t">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-cannon-phev-studio.png" alt="GWM Cannon PHEV facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Cannon PHEV</h3><span>Pickup · Details on request</span><a href="product.html?model=cannon-phev">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-king-kong-cannon-studio.png" alt="GWM King Kong Cannon facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>King Kong Cannon</h3><span>Pickup · Details on request</span><a href="product.html?model=king-kong-cannon">Explore model →</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-artillery-studio.png" alt="GWM Artillery facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Artillery</h3><span>Pickup · Details on request</span><a href="product.html?model=artillery">Explore model →</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-poer-hi4-t-studio.png" alt="GWM POER Hi4-T facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Hi4-T</h3><span>Pickup · Details on request</span><a href="product.html?model=poer-hi4-t">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-cannon-phev-studio.png" alt="GWM Cannon PHEV facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Cannon PHEV</h3><span>Pickup · Details on request</span><a href="product.html?model=cannon-phev">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-king-kong-cannon-studio.png" alt="GWM King Kong Cannon facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>King Kong Cannon</h3><span>Pickup · Details on request</span><a href="product.html?model=king-kong-cannon">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-artillery-studio.png" alt="GWM Artillery facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Artillery</h3><span>Pickup · Details on request</span><a href="product.html?model=artillery">Explore model</a></div></article>
         </div>
       </div>
     </section>
@@ -159,7 +159,7 @@
         <div class="showcase-stack__content">
           <p class="eyebrow eyebrow--inverse">GWM HAVAL V7</p>
           <h2 id="v7-title">Built to Explore</h2>
-          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="#vehicles">Explore</a></div>
+          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore</a></div>
         </div>
       </article>
 
@@ -170,7 +170,7 @@
           <p class="eyebrow eyebrow--inverse">TANK 500</p>
           <h2 id="tank-title">Offroad on demand</h2>
           <p>A premium SUV concept for journeys that move from city streets to open terrain.</p>
-          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="#vehicles">Explore the model</a></div>
+          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore the model</a></div>
         </div>
       </article>
 
@@ -180,7 +180,7 @@
         <div class="showcase-stack__content">
           <p class="eyebrow eyebrow--inverse">GWM HAVAL JOLION MAX</p>
           <h2 id="jolion-title">More of Everything</h2>
-          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="#vehicles">Explore</a></div>
+          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore</a></div>
         </div>
       </article>
     </section>
@@ -191,26 +191,26 @@
 
         <div class="powertrain-tabs" role="tablist" aria-label="Choose a powertrain">
           <button type="button" role="tab" aria-selected="true" aria-controls="powertrain-bev" id="powertrain-tab-bev" data-powertrain-tab="0"><img src="assets/icons/powertrain-bolt.svg" alt=""><strong>BEV</strong><span>Battery Electric</span></button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-phev" id="powertrain-tab-phev" data-powertrain-tab="1" tabindex="-1"><img src="assets/icons/powertrain-engine-plug.svg" alt=""><strong>PHEV</strong><span>Plug-in Hybrid</span></button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-hev" id="powertrain-tab-hev" data-powertrain-tab="2" tabindex="-1"><img src="assets/icons/powertrain-engine.svg" alt=""><strong>HEV</strong><span>Self-Charging Hybrid</span></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-hev" id="powertrain-tab-hev" data-powertrain-tab="1" tabindex="-1"><img src="assets/icons/powertrain-engine.svg" alt=""><strong>HEV</strong><span>Self-Charging Hybrid</span></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-phev" id="powertrain-tab-phev" data-powertrain-tab="2" tabindex="-1"><img src="assets/icons/powertrain-engine-plug.svg" alt=""><strong>PHEV</strong><span>Plug-in Hybrid</span></button>
         </div>
 
         <div class="powertrain-stage">
           <button class="powertrain-stage__arrow powertrain-stage__arrow--previous" type="button" aria-label="Previous powertrain" data-powertrain-previous><img src="assets/icons/arrow-left.svg" alt=""></button>
 
           <article class="powertrain-panel is-active" id="powertrain-bev" role="tabpanel" aria-labelledby="powertrain-tab-bev" data-powertrain-panel="0">
-            <figure class="powertrain-panel__media"><img src="assets/images/haval-jolion-pro.jpg" alt="GWM vehicle travelling on an open road" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-battery.svg" alt=""></span><figcaption><span>01 / 03</span><i aria-hidden="true"></i></figcaption></figure>
+            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-bev.jpg" alt="GWM ORA and SUV electric vehicles outside modern architecture" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-battery.svg" alt=""></span><figcaption><span>01 / 03</span><i aria-hidden="true"></i></figcaption></figure>
             <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">BEV</p><h3>Battery Electric Vehicles</h3><p>Explore fully electric mobility designed for quiet, responsive everyday journeys.</p><ul><li><img src="assets/icons/powertrain-battery.svg" alt=""><span>Electric<br>powertrain</span></li><li><img src="assets/icons/powertrain-leaf.svg" alt=""><span>Everyday<br>versatility</span></li><li><img src="assets/icons/powertrain-charge.svg" alt=""><span>Market availability<br>varies</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>Explore BEV models</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="Powertrain comparison details are awaiting approved regional content."><span>Compare powertrains</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
           </article>
 
-          <article class="powertrain-panel" id="powertrain-phev" role="tabpanel" aria-labelledby="powertrain-tab-phev" data-powertrain-panel="1" hidden>
-            <figure class="powertrain-panel__media"><img src="assets/images/poer.jpg" alt="GWM pickup travelling through open terrain" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine-plug.svg" alt=""></span><figcaption><span>02 / 03</span><i aria-hidden="true"></i></figcaption></figure>
-            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">PHEV</p><h3>Plug-in Hybrid Vehicles</h3><p>The best of both worlds. Drive on electric power for everyday journeys, with petrol support when you need to go further.</p><ul><li><img src="assets/icons/powertrain-bolt.svg" alt=""><span>Electric<br>+ Petrol</span></li><li><img src="assets/icons/powertrain-leaf.svg" alt=""><span>Flexible<br>Range</span></li><li><img src="assets/icons/powertrain-plug.svg" alt=""><span>Plug-in<br>Charging</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>Explore PHEV models</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="Powertrain comparison details are awaiting approved regional content."><span>Compare powertrains</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
+          <article class="powertrain-panel" id="powertrain-hev" role="tabpanel" aria-labelledby="powertrain-tab-hev" data-powertrain-panel="1" hidden>
+            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-hev.jpg" alt="GWM TANK 500 hybrid driving through desert terrain" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine.svg" alt=""></span><figcaption><span>02 / 03</span><i aria-hidden="true"></i></figcaption></figure>
+            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">HEV</p><h3>Self-Charging Hybrid Vehicles</h3><p>No plugs, no fuss. Petrol and electric power work together seamlessly for efficient, confident everyday driving.</p><ul><li><img src="assets/icons/powertrain-cycle.svg" alt=""><span>Self-Charging</span></li><li><img src="assets/icons/powertrain-fuel.svg" alt=""><span>Lower<br>Fuel Use</span></li><li><img src="assets/icons/powertrain-steering.svg" alt=""><span>Smooth<br>Hybrid Drive</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>Explore HEV models</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="Powertrain comparison details are awaiting approved regional content."><span>Compare powertrains</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
           </article>
 
-          <article class="powertrain-panel" id="powertrain-hev" role="tabpanel" aria-labelledby="powertrain-tab-hev" data-powertrain-panel="2" hidden>
-            <figure class="powertrain-panel__media"><img src="assets/images/haval-h6.jpg" alt="GWM HAVAL vehicle on the road" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine.svg" alt=""></span><figcaption><span>03 / 03</span><i aria-hidden="true"></i></figcaption></figure>
-            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">HEV</p><h3>Self-Charging Hybrid Vehicles</h3><p>No plugs, no fuss. Petrol and electric power work together seamlessly for efficient, confident everyday driving.</p><ul><li><img src="assets/icons/powertrain-cycle.svg" alt=""><span>Self-Charging</span></li><li><img src="assets/icons/powertrain-fuel.svg" alt=""><span>Lower<br>Fuel Use</span></li><li><img src="assets/icons/powertrain-steering.svg" alt=""><span>Smooth<br>Hybrid Drive</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>Explore HEV models</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="Powertrain comparison details are awaiting approved regional content."><span>Compare powertrains</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
+          <article class="powertrain-panel" id="powertrain-phev" role="tabpanel" aria-labelledby="powertrain-tab-phev" data-powertrain-panel="2" hidden>
+            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-phev.jpg" alt="GWM plug-in hybrid vehicle connected to a home charger" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine-plug.svg" alt=""></span><figcaption><span>03 / 03</span><i aria-hidden="true"></i></figcaption></figure>
+            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">PHEV</p><h3>Plug-in Hybrid Vehicles</h3><p>The best of both worlds. Drive on electric power for everyday journeys, with petrol support when you need to go further.</p><ul><li><img src="assets/icons/powertrain-bolt.svg" alt=""><span>Electric<br>+ Petrol</span></li><li><img src="assets/icons/powertrain-leaf.svg" alt=""><span>Flexible<br>Range</span></li><li><img src="assets/icons/powertrain-plug.svg" alt=""><span>Plug-in<br>Charging</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>Explore PHEV models</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="Powertrain comparison details are awaiting approved regional content."><span>Compare powertrains</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
           </article>
 
           <button class="powertrain-stage__arrow powertrain-stage__arrow--next" type="button" aria-label="Next powertrain" data-powertrain-next><img src="assets/icons/arrow-right.svg" alt=""></button>
@@ -222,7 +222,13 @@
     <section class="pillars section section--soft" aria-labelledby="pillars-title">
       <div class="container">
         <div class="section-heading"><p class="eyebrow">Brand positioning</p><h2 id="pillars-title">Made for more ways to move.</h2></div>
-        <ol class="pillar-grid"><li><span>01</span><h3>All scenarios</h3><p>From everyday city travel to open-road exploration.</p></li><li><span>02</span><h3>All powertrains</h3><p>A broad approach to mobility, shaped by market availability.</p></li><li><span>03</span><h3>All users</h3><p>Vehicles and ownership experiences designed around real regional needs.</p></li></ol>
+        <div class="pillars__stage">
+          <ol class="pillar-grid">
+            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="m19.5 12.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/></svg></div><h3>All scenarios</h3><p>From everyday city travel to open-road exploration.</p><a href="#vehicles" aria-label="Explore vehicles for all scenarios"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M18 3 9 17h7l-2 12 9-15h-7l2-11Z"/></svg></div><h3>All powertrains</h3><p>A broad approach to mobility, shaped by market availability.</p><a href="#powertrains" aria-label="Explore all powertrains"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="12" cy="11" r="4"/><circle cx="22" cy="13" r="3"/><path d="M4 27c0-6 3-9 8-9s8 3 8 9M19 20c5 0 8 2 8 7"/></svg></div><h3>All users</h3><p>Vehicles and ownership experiences designed around real regional needs.</p><a href="#regional-network" aria-label="Explore regional GWM experiences"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+          </ol>
+        </div>
       </div>
     </section>
 
@@ -264,7 +270,7 @@
           <p>Service, warranty and ownership information designed to support every stage of the journey. Availability will be tailored to each market.</p>
           <div class="button-group">
             <button class="button button--primary" type="button" data-placeholder-action="Service booking is not connected in this prototype.">Book a service</button>
-            <button class="text-link" type="button" data-placeholder-action="Dealer search is not connected in this prototype.">Find a dealer →</button>
+            <button class="text-link" type="button" data-placeholder-action="Dealer search is not connected in this prototype.">Find a dealer</button>
           </div>
         </div>
 
@@ -278,11 +284,11 @@
             <span aria-hidden="true"></span>
           </button>
 
-          <dl class="care__services" aria-label="Ownership support areas" data-care-details>
-            <div><dt>01</dt><dd><strong>Service booking</strong><span>Plan your next workshop visit.</span></dd></div>
-            <div><dt>02</dt><dd><strong>Warranty information</strong><span>Review market-specific coverage.</span></dd></div>
-            <div><dt>03</dt><dd><strong>Owner support</strong><span>Find help throughout ownership.</span></dd></div>
-          </dl>
+          <div class="care__services" aria-label="Ownership support areas" data-care-details>
+            <button type="button" data-placeholder-action="Service booking is not connected in this prototype."><span><strong>Service booking</strong><small>Plan your next workshop visit.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
+            <button type="button" data-placeholder-action="Warranty information is not connected in this prototype."><span><strong>Warranty information</strong><small>Review market-specific coverage.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
+            <button type="button" data-placeholder-action="Owner support is not connected in this prototype."><span><strong>Owner support</strong><small>Find help throughout ownership.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
+          </div>
         </figure>
       </div>
     </section>
@@ -330,14 +336,24 @@
 
   <footer class="footer" id="footer">
     <div class="container footer__grid"><div class="footer__brand"><img src="assets/brand/gwm-logo-white.png" alt="GWM" width="136" height="60"><p>Go with more</p><button type="button" data-placeholder-action="Market websites are not connected in this prototype.">United Arab Emirates</button></div><nav aria-label="Model links"><h2>Models</h2><a href="#vehicles">SUVs</a><a href="#vehicles">Pickups</a><a href="#powertrains">New energy</a><a href="#vehicles">Compare models</a></nav><nav aria-label="Owner links"><h2>Owners</h2><a href="#owners">GWM CARE</a><a href="#owners">Book a service</a><a href="#owners">Warranty</a><a href="#owners">Owner manuals</a></nav><nav aria-label="Company links"><h2>Company</h2><a href="#regional-network">About GWM</a><a href="#newsroom">Newsroom</a><a href="#footer">Careers</a><a href="#footer">Contact</a></nav></div>
-    <div class="container footer__bottom"><p>© 2026 Great Wall Motor. Concept implementation.</p><div class="social-links"><a href="#footer" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" width="18" height="18"></a></div></div>
+    <div class="container footer__bottom"><p>Copyright 2026.</p><div class="social-links"><a href="#footer" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" width="18" height="18"></a></div></div>
   </footer>
 
-  <button class="ask-gwm" type="button" data-placeholder-action="Ask GWM is a concept feature and is not connected to a live service.">✦ Ask GWM</button>
+  <button class="ask-gwm" type="button" data-ask-gwm>✦ Ask GWM</button>
   <div class="toast" role="status" aria-live="polite" hidden data-toast></div>
 
   <dialog class="test-drive-dialog" id="test-drive-dialog" aria-labelledby="test-drive-title" data-test-drive-dialog>
-    <form method="dialog"><div class="dialog-top"><div><p class="eyebrow">Next step</p><h2 id="test-drive-title">Book a test drive</h2></div><button class="icon-button icon-button--dark" type="submit" value="cancel" aria-label="Close"><img src="assets/icons/close.svg" alt="" width="20" height="20"></button></div><p>This concept form is not connected to a booking service. Your details will not be submitted.</p><label>Full name<input type="text" autocomplete="name" placeholder="Your name"></label><label>Email<input type="email" autocomplete="email" placeholder="name@example.com"></label><label>Preferred model<select><option>Choose a model</option><option>HAVAL H9</option><option>HAVAL V7</option><option>TANK 500</option></select></label><button class="button" value="cancel" type="submit">Close prototype form</button></form>
+    <form data-test-drive-form><div class="dialog-top"><div><p class="eyebrow">Next step</p><h2 id="test-drive-title">Book a test drive</h2></div><button class="icon-button icon-button--dark" type="button" aria-label="Close" data-test-drive-close><img src="assets/icons/close.svg" alt="" width="20" height="20"></button></div><p>Choose your vehicle and preferred location. This local prototype validates the enquiry without transmitting personal data.</p><label>Preferred model<select name="model" required><option value="">Choose a model</option><option>HAVAL H9</option><option>HAVAL H7</option><option>HAVAL H6</option><option>HAVAL Jolion Max</option><option>TANK 300</option><option>TANK 500</option><option>POER Cannon PHEV</option></select></label><div class="form-row"><label>Country<select name="country" required><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Kuwait</option><option>Qatar</option><option>Bahrain</option><option>Oman</option></select></label><label>City<input name="city" required autocomplete="address-level2"></label></div><label>Full name<input name="name" required autocomplete="name" placeholder="Your name"></label><label>Email<input name="email" required type="email" autocomplete="email" placeholder="name@example.com"></label><label>Mobile<input name="mobile" required type="tel" autocomplete="tel" placeholder="+971"></label><label class="consent-row"><input name="consent" type="checkbox" required><span>I agree to be contacted about this test-drive request.</span></label><button class="button" type="submit">Submit request</button><div class="form-success" hidden data-test-drive-success role="status"><strong>Request received</strong><span>Your local reference is GWM-ME-4102. No data was transmitted.</span></div></form>
   </dialog>
+
+  <section class="ask-overlay" aria-hidden="true" data-ask-overlay>
+    <button class="ask-overlay__backdrop" type="button" aria-label="Close Ask GWM" data-ask-close></button>
+    <div class="ask-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="ask-title">
+      <div class="ask-overlay__top"><p class="eyebrow" id="ask-title">Search GWM Middle East</p><button class="icon-button icon-button--dark" type="button" aria-label="Close Ask GWM" data-ask-close><img src="assets/icons/close.svg" alt="" width="20" height="20"></button></div>
+      <form class="ask-search" data-ask-form><img src="assets/icons/search.svg" alt="" width="22" height="22"><input name="question" autocomplete="off" placeholder="Ask about models, ownership, dealers…" aria-label="Ask GWM a question"><button class="button" type="submit">Send</button></form>
+      <div class="ask-tabs" role="tablist"><button type="button" role="tab" aria-selected="false" data-ask-tab="results">Results</button><button type="button" role="tab" aria-selected="true" data-ask-tab="ai">✦ Ask GWM</button></div>
+      <div class="ask-overlay__body" data-ask-log aria-live="polite"><div class="ask-intro"><p>Ask me anything about GWM vehicles, ownership or dealers in your market. Answers use the approved concept content available locally.</p><span>Suggested</span><div class="ask-suggestions"><button type="button" data-ask-suggestion>Which GWM models are available as hybrids?</button><button type="button" data-ask-suggestion>Is the TANK 300 suited to desert driving?</button><button type="button" data-ask-suggestion>How do I book a test drive?</button></div></div></div>
+    </div>
+  </section>
 </body>
 </html>

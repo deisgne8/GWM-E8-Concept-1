@@ -241,8 +241,126 @@
     });
   }
 
-  document.querySelectorAll('[data-test-drive]').forEach(button => button.addEventListener('click', () => dialog.showModal()));
-  document.querySelectorAll('a[href="#test-drive-dialog"]').forEach(link => link.addEventListener('click', event => { event.preventDefault(); dialog.showModal(); }));
+  const openTestDrive = () => {
+    if (!dialog.open) dialog.showModal();
+    document.body.classList.add('drawer-open');
+  };
+  const closeTestDrive = () => {
+    dialog.close();
+    document.body.classList.remove('drawer-open');
+  };
+  document.querySelectorAll('[data-test-drive]').forEach(button => button.addEventListener('click', openTestDrive));
+  document.querySelectorAll('a[href="#test-drive-dialog"]').forEach(link => link.addEventListener('click', event => { event.preventDefault(); openTestDrive(); }));
+  dialog.querySelectorAll('[data-test-drive-close]').forEach(button => button.addEventListener('click', closeTestDrive));
+  dialog.addEventListener('click', event => { if (event.target === dialog) closeTestDrive(); });
+  dialog.addEventListener('close', () => document.body.classList.remove('drawer-open'));
+
+  const testDriveForm = dialog.querySelector('[data-test-drive-form]');
+  const testDriveSuccess = dialog.querySelector('[data-test-drive-success]');
+  testDriveForm.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!testDriveForm.reportValidity()) return;
+    testDriveSuccess.hidden = false;
+    testDriveForm.querySelector('button[type="submit"]').disabled = true;
+    testDriveSuccess.focus?.();
+  });
+
+  const askOverlay = document.querySelector('[data-ask-overlay]');
+  const askForm = document.querySelector('[data-ask-form]');
+  const askInput = askForm.querySelector('input[name="question"]');
+  const askLog = document.querySelector('[data-ask-log]');
+  let askLastFocused = null;
+  const askAnswers = [
+    {
+      match: /hybrid|hev|phev|electric|bev|powertrain/i,
+      answer: 'The concept range includes HEV and PHEV choices across selected HAVAL, TANK and POER models, alongside battery-electric mobility. Exact availability varies by Middle East market.',
+      source: 'Powertrain Explorer',
+      follow: 'Show the vehicle range'
+    },
+    {
+      match: /tank\s*300|desert|off.?road/i,
+      answer: 'The TANK 300 is presented as an off-road SUV. Suitability for a specific desert route depends on terrain, conditions, driver experience and the specification approved for your market.',
+      source: 'GWM TANK model range',
+      follow: 'Explore TANK models'
+    },
+    {
+      match: /test drive|book|drive/i,
+      answer: 'You can start a test-drive request from the header or any vehicle page. Choose a model, country and city, then add your contact details.',
+      source: 'Test-drive journey',
+      follow: 'Book a test drive'
+    },
+    {
+      match: /dealer|service|warranty|owner/i,
+      answer: 'GWM CARE brings together service booking, warranty information and owner support. Market-specific coverage and dealer details will be connected to approved regional sources.',
+      source: 'GWM CARE',
+      follow: 'View owner support'
+    }
+  ];
+  const fallbackAnswer = {
+    answer: 'I can help with the local GWM vehicle range, powertrains, ownership support and test-drive journey. Try asking about a model family or how you prefer to drive.',
+    source: 'GWM Middle East concept',
+    follow: 'Browse all vehicles'
+  };
+  const openAsk = () => {
+    askLastFocused = document.activeElement;
+    askOverlay.classList.add('is-open');
+    askOverlay.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('ask-open');
+    window.setTimeout(() => askInput.focus(), 80);
+  };
+  const closeAsk = () => {
+    askOverlay.classList.remove('is-open');
+    askOverlay.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('ask-open');
+    askLastFocused?.focus();
+  };
+  const appendAskMessage = (role, text, extra = null) => {
+    const row = document.createElement('div');
+    row.className = `ask-message ask-message--${role}`;
+    const message = document.createElement('p');
+    message.textContent = text;
+    row.append(message);
+    if (extra) {
+      const meta = document.createElement('div');
+      meta.className = 'ask-message__meta';
+      meta.innerHTML = `<span>Source</span><strong>${extra.source}</strong>`;
+      const follow = document.createElement('button');
+      follow.type = 'button';
+      follow.textContent = extra.follow;
+      follow.addEventListener('click', () => {
+        if (/test drive/i.test(extra.follow)) { closeAsk(); openTestDrive(); }
+        else if (/owner/i.test(extra.follow)) { closeAsk(); document.querySelector('#owners')?.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' }); }
+        else window.location.href = /TANK/i.test(extra.follow) ? 'vehicles.html?brand=TANK' : 'vehicles.html';
+      });
+      meta.append(follow);
+      row.append(meta);
+    }
+    askLog.append(row);
+    askLog.scrollTop = askLog.scrollHeight;
+  };
+  const askQuestion = question => {
+    const text = question.trim();
+    if (!text) return;
+    askLog.querySelector('.ask-intro')?.remove();
+    appendAskMessage('user', text);
+    const thinking = document.createElement('div');
+    thinking.className = 'ask-thinking';
+    thinking.innerHTML = '<i></i><span>Ask GWM is thinking…</span>';
+    askLog.append(thinking);
+    askLog.scrollTop = askLog.scrollHeight;
+    const selected = askAnswers.find(item => item.match.test(text)) || fallbackAnswer;
+    window.setTimeout(() => {
+      thinking.remove();
+      appendAskMessage('assistant', selected.answer, selected);
+    }, reducedMotion ? 0 : 650);
+  };
+  document.querySelectorAll('[data-ask-gwm]').forEach(button => button.addEventListener('click', openAsk));
+  document.querySelectorAll('[data-ask-close]').forEach(button => button.addEventListener('click', closeAsk));
+  document.querySelectorAll('[data-ask-suggestion]').forEach(button => button.addEventListener('click', () => askQuestion(button.textContent)));
+  askForm.addEventListener('submit', event => { event.preventDefault(); askQuestion(askInput.value); askInput.value = ''; });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && askOverlay.classList.contains('is-open')) closeAsk();
+  });
 
   function showToast(message) {
     window.clearTimeout(toastTimer);
