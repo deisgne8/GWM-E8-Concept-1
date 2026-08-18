@@ -42,8 +42,32 @@
   menuCloseButtons.forEach(button => button.addEventListener('click', closeMenu));
   menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 
+  const marketSelector = document.querySelector('[data-market-selector]');
+  const marketOpenButtons = document.querySelectorAll('[data-market-open]');
+  const marketOpen = marketOpenButtons[0];
+  const marketCloseButtons = document.querySelectorAll('[data-market-close]');
+  const openMarketSelector = () => {
+    lastFocused = document.activeElement;
+    marketSelector.classList.add('is-open');
+    marketSelector.setAttribute('aria-hidden', 'false');
+    marketOpen.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('market-selector-open');
+    marketSelector.querySelector('.market-selector__panel [data-market-close]').focus();
+  };
+  const closeMarketSelector = () => {
+    marketSelector.classList.remove('is-open');
+    marketSelector.setAttribute('aria-hidden', 'true');
+    marketOpen.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('market-selector-open');
+    lastFocused?.focus();
+  };
+  marketOpenButtons.forEach(button => button.addEventListener('click', openMarketSelector));
+  marketCloseButtons.forEach(button => button.addEventListener('click', closeMarketSelector));
+  marketSelector.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMarketSelector));
+
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape' && menu.classList.contains('is-open')) closeMenu();
+    if (event.key === 'Escape' && marketSelector.classList.contains('is-open')) closeMarketSelector();
     if (event.key !== 'Tab' || !menu.classList.contains('is-open')) return;
     const focusable = [...menu.querySelectorAll('a, button:not([disabled])')];
     const first = focusable[0];
