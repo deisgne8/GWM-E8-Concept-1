@@ -144,3 +144,29 @@
 @media(max-width:900px){.technology-story__features{grid-template-columns:1fr 1fr}.technology-feature:last-child{grid-column:1/-1}.technology-feature:last-child figure{aspect-ratio:2/1}.technology-feature:last-child p{max-width:620px}}
 @media(max-width:600px){.technology-story{padding-block:84px}.technology-story__intro{justify-items:start;text-align:left}.technology-story__intro h2{font-size:44px}.technology-story__intro>p:last-child{margin-top:22px;font-size:15px}.technology-story__features{grid-template-columns:1fr;gap:48px;margin-top:54px}.technology-feature:last-child{grid-column:auto}.technology-feature figure,.technology-feature:last-child figure{aspect-ratio:4/3}.technology-feature h3{margin-top:20px;font-size:29px}.technology-story__foot{justify-content:flex-start}}
 @media(prefers-reduced-motion:reduce){.technology-feature img,.technology-story__foot a span{transition:none}.technology-feature:hover img{transform:none}}
+
+/* Saudi market: mirror the editorial product experience without changing UAE. */
+.market-saudi.product-page{direction:rtl;font-family:Cairo,Arial,sans-serif;text-align:right}
+.market-saudi .product-hero__shade{background:linear-gradient(270deg,rgba(0,0,0,.84) 0,rgba(0,0,0,.34) 48%,rgba(0,0,0,.05) 72%),linear-gradient(0deg,rgba(0,0,0,.72),transparent 48%)}
+.market-saudi .product-hero__copy h1{margin-right:-.06em;margin-left:0}
+.market-saudi .product-hero__model{right:auto;left:-.04em}
+.market-saudi .product-scroll-cue{right:auto;left:var(--gutter)}
+.market-saudi .design-film__beat{text-align:right}
+.market-saudi .h9-gallery__heading,.market-saudi .technology-story__intro,.market-saudi .technology-feature,.market-saudi .product-interior__heading,.market-saudi .product-safety,.market-saudi .product-specifications{text-align:right}
+.market-saudi .technology-story__intro{justify-items:start}
+.market-saudi .technology-story__foot{justify-content:flex-start}
+.market-saudi .technology-story__foot a span{transform:scaleX(-1)}
+.market-saudi .technology-story__foot a:hover span{transform:translateX(-5px) scaleX(-1)}
+.market-saudi .performance-facts>div{border-right:0;border-left:1px solid var(--product-line);padding:26px 0 10px 24px}
+.market-saudi .performance-facts>div:not(:first-child){padding-right:24px;padding-left:24px}
+.market-saudi .performance-facts>div:last-child{border-left:0}
+.market-saudi .specification-groups dl>div{border-left:0;border-right:1px solid #ccc}
+.market-saudi .specification-groups dl>div:first-child{border-right:0;padding-right:0;padding-left:28px}
+.market-saudi .cabin-explorer__cta{right:auto;left:var(--gutter)}
+.market-saudi .cabin-explorer__identity{right:var(--gutter);left:auto}
+.market-saudi .cabin-explorer__choice{right:auto;left:18%}
+.market-saudi .cabin-explorer__steps{right:auto;left:28px}
+.market-saudi .test-drive-dialog,.market-saudi .ask-overlay__panel,.market-saudi .site-menu__panel,.market-saudi .market-selector__panel{text-align:right}
+.market-saudi .ask-search{direction:rtl}
+@media(max-width:820px){.market-saudi .model-nav{padding-right:var(--gutter);padding-left:0}.market-saudi .performance-facts>div,.market-saudi .performance-facts>div:not(:first-child){border-left:0;padding:20px 0}}
+@media(max-width:700px){.market-saudi .cabin-explorer__cta{right:auto;left:20px}.market-saudi .cabin-explorer__identity{right:20px;left:auto}.market-saudi .cabin-explorer__choice{right:20px;left:auto}.market-saudi .cabin-explorer__steps{right:auto;left:18px}}

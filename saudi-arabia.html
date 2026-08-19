@@ -7,7 +7,7 @@
   <title>جي دبليو إم السعودية | صُنعت لمسافات المملكة</title>
   <link rel="icon" href="assets/brand/gwm-logo-standard.png" type="image/png">
   <link rel="stylesheet" href="css/styles.css?v=66">
-  <script src="js/app.js?v=48" defer></script>
+  <script src="js/app.js?v=49" defer></script>
 </head>
 <body class="market-saudi intro-active">
   <a class="skip-link" href="#main-content">انتقل إلى المحتوى الرئيسي</a>
@@ -26,7 +26,7 @@
         <img class="site-logo__dark" src="assets/brand/gwm-logo-standard.png" alt="GWM" width="110" height="48">
       </a>
       <nav class="desktop-nav" aria-label="التنقل الرئيسي">
-        <a href="vehicles.html">السيارات</a>
+        <a href="vehicles.html?market=sa">السيارات</a>
         <a href="#owners">المُلّاك</a>
         <a href="#regional-network">الأساطيل والأعمال</a>
         <a href="#technology">التقنية</a>
@@ -81,11 +81,11 @@
       <div class="site-menu__grid">
         <section>
           <p class="menu-heading">حسب العلامة</p>
-          <a href="vehicles.html?brand=HAVAL">HAVAL</a><a href="vehicles.html?brand=TANK">TANK</a><a href="vehicles.html?brand=WINGLE">WINGLE</a><a href="vehicles.html?brand=POER">POER</a>
+          <a href="vehicles.html?market=sa&amp;brand=HAVAL">HAVAL</a><a href="vehicles.html?market=sa&amp;brand=TANK">TANK</a><a href="vehicles.html?market=sa&amp;brand=WINGLE">WINGLE</a><a href="vehicles.html?market=sa&amp;brand=POER">POER</a>
         </section>
         <section>
           <p class="menu-heading">استكشف</p>
-          <a href="vehicles.html">مجموعة السيارات</a><a href="#powertrains">أنظمة الدفع</a><a href="#owners">عناية جي دبليو إم</a><a href="#regional-network">ابحث عن وكيل</a>
+          <a href="vehicles.html?market=sa">مجموعة السيارات</a><a href="#powertrains">أنظمة الدفع</a><a href="#owners">عناية جي دبليو إم</a><a href="#regional-network">ابحث عن وكيل</a>
         </section>
         <section>
           <p class="menu-heading">الشرق الأوسط</p>
@@ -109,7 +109,7 @@
             <h1>صُنعت لمسافات المملكة.</h1>
             <p class="hero-slide__copy">من الرياض إلى جدة بثقة على امتداد الطريق — سيارات دفع رباعي وبيك أب مصممة للرحلات الطويلة.</p>
             <div class="button-group">
-              <a class="button" href="product.html?model=tank-700">احجز تانك 700 مسبقاً</a>
+              <a class="button" href="product.html?model=tank-700&amp;market=sa">احجز تانك 700 مسبقاً</a>
               <button class="button button--outline" type="button" data-test-drive>احجز قيادة تجريبية</button>
             </div>
           </div>
@@ -122,7 +122,7 @@
             <p class="eyebrow eyebrow--inverse">انطلق إلى أبعد</p>
             <h2>مصممة لتتجاوز الحدود.</h2>
             <p class="hero-slide__copy">تعرّف على جي دبليو إم هافال V7، تعبير جريء عن روح المغامرة في الشرق الأوسط.</p>
-            <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف الطرازات</a></div>
+            <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html?market=sa">استكشف الطرازات</a></div>
           </div>
           <div class="hero-slide__identity" lang="ar" dir="rtl"><span>جي دبليو إم هافال V7</span><strong>صُممت للاستكشاف</strong></div>
         </article>
@@ -133,7 +133,7 @@
             <p class="eyebrow eyebrow--inverse">انطلق إلى أبعد</p>
             <h2>المزيد لكل يوم.</h2>
             <p class="hero-slide__copy">تجمع جي دبليو إم هافال جوليان ماكس بين التصميم العصري والمرونة المناسبة للحياة اليومية.</p>
-            <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف الطرازات</a></div>
+            <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html?market=sa">استكشف الطرازات</a></div>
           </div>
           <div class="hero-slide__identity" lang="ar" dir="rtl"><span>جي دبليو إم هافال جوليان ماكس</span><strong>المزيد من كل شيء</strong></div>
         </article>
@@ -155,28 +155,28 @@
           <button id="brand-tab-poer" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="POER">POER</button>
         </div>
         <div class="vehicle-grid" id="vehicle-grid" aria-live="polite" aria-label="الطرازات ذات الأولوية في السوق السعودي" data-initial-brand="KSA">
-          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">الأكثر مبيعاً</span><img src="assets/images/catalog-wingle-7-studio.png" alt="جي دبليو إم وينجل 7" loading="lazy"><div><p>وينجل</p><h3>Wingle 7</h3><span>بيك أب للعمل والرحلات الطويلة · التفاصيل عند الطلب</span><a href="product.html?model=wingle-7">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">متاحة للحجز المسبق</span><img src="assets/images/catalog-tank-700-studio.png" alt="جي دبليو إم تانك 700" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 700</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-700">احجز مسبقاً</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">للعائلة والمسافات الطويلة</span><img src="assets/images/catalog-haval-h9-studio.png" alt="جي دبليو إم هافال H9" loading="lazy"><div><p>هافال</p><h3>H9</h3><span>سيارة عائلية بسبعة مقاعد · التفاصيل عند الطلب</span><a href="product.html?model=h9">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">قدرات فاخرة</span><img src="assets/images/catalog-tank-500-studio.png" alt="جي دبليو إم تانك 500" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 500</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-500">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">الأكثر مبيعاً</span><img src="assets/images/catalog-wingle-7-studio.png" alt="جي دبليو إم وينجل 7" loading="lazy"><div><p>وينجل</p><h3>Wingle 7</h3><span>بيك أب للعمل والرحلات الطويلة · التفاصيل عند الطلب</span><a href="product.html?model=wingle-7&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">متاحة للحجز المسبق</span><img src="assets/images/catalog-tank-700-studio.png" alt="جي دبليو إم تانك 700" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 700</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-700&amp;market=sa">احجز مسبقاً</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">للعائلة والمسافات الطويلة</span><img src="assets/images/catalog-haval-h9-studio.png" alt="جي دبليو إم هافال H9" loading="lazy"><div><p>هافال</p><h3>H9</h3><span>سيارة عائلية بسبعة مقاعد · التفاصيل عند الطلب</span><a href="product.html?model=h9&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">قدرات فاخرة</span><img src="assets/images/catalog-tank-500-studio.png" alt="جي دبليو إم تانك 500" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 500</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-500&amp;market=sa">استكشف الطراز</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h9-studio.png" alt="جي دبليو إم هافال H9 سوداء" loading="lazy"><div><p>هافال</p><h3>H9</h3><span>سيارة دفع رباعي للطرق الوعرة · التفاصيل عند الطلب</span><a href="product.html?model=h9">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h7-studio.png" alt="جي دبليو إم هافال H7 فضية" loading="lazy"><div><p>هافال</p><h3>H7</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=h7">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h6-studio.png" alt="جي دبليو إم هافال H6" loading="lazy"><div><p>هافال</p><h3>H6</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=h6">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-jolion-max-studio.png" alt="جي دبليو إم هافال جوليان ماكس" loading="lazy"><div><p>هافال</p><h3>Jolion Max</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=jolion-max">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h9-studio.png" alt="جي دبليو إم هافال H9 سوداء" loading="lazy"><div><p>هافال</p><h3>H9</h3><span>سيارة دفع رباعي للطرق الوعرة · التفاصيل عند الطلب</span><a href="product.html?model=h9&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h7-studio.png" alt="جي دبليو إم هافال H7 فضية" loading="lazy"><div><p>هافال</p><h3>H7</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=h7&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h6-studio.png" alt="جي دبليو إم هافال H6" loading="lazy"><div><p>هافال</p><h3>H6</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=h6&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-jolion-max-studio.png" alt="جي دبليو إم هافال جوليان ماكس" loading="lazy"><div><p>هافال</p><h3>Jolion Max</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=jolion-max&amp;market=sa">استكشف الطراز</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-300-studio.png" alt="جي دبليو إم تانك 300" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 300</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-300">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-400-studio.png" alt="جي دبليو إم تانك 400" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 400</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-400">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-500-studio.png" alt="جي دبليو إم تانك 500" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 500</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-500">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-700-studio.png" alt="جي دبليو إم تانك 700" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 700</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-700">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-300-studio.png" alt="جي دبليو إم تانك 300" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 300</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-300&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-400-studio.png" alt="جي دبليو إم تانك 400" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 400</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-400&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-500-studio.png" alt="جي دبليو إم تانك 500" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 500</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-500&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-700-studio.png" alt="جي دبليو إم تانك 700" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 700</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-700&amp;market=sa">استكشف الطراز</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-5-studio.png" alt="جي دبليو إم وينجل 5" loading="lazy"><div><p>وينجل</p><h3>Wingle 5</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=wingle-5">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-7-studio.png" alt="جي دبليو إم وينجل 7" loading="lazy"><div><p>وينجل</p><h3>Wingle 7</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=wingle-7">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-5-studio.png" alt="جي دبليو إم وينجل 5" loading="lazy"><div><p>وينجل</p><h3>Wingle 5</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=wingle-5&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-7-studio.png" alt="جي دبليو إم وينجل 7" loading="lazy"><div><p>وينجل</p><h3>Wingle 7</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=wingle-7&amp;market=sa">استكشف الطراز</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-poer-hi4-t-studio.png" alt="جي دبليو إم باور Hi4-T" loading="lazy"><div><p>باور</p><h3>Hi4-T</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=poer-hi4-t">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-cannon-phev-studio.png" alt="جي دبليو إم كانون PHEV" loading="lazy"><div><p>باور</p><h3>Cannon PHEV</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=cannon-phev">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-king-kong-cannon-studio.png" alt="جي دبليو إم كينغ كونغ كانون" loading="lazy"><div><p>باور</p><h3>King Kong Cannon</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=king-kong-cannon">استكشف الطراز</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-artillery-studio.png" alt="جي دبليو إم أرتيلري" loading="lazy"><div><p>باور</p><h3>Artillery</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=artillery">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-poer-hi4-t-studio.png" alt="جي دبليو إم باور Hi4-T" loading="lazy"><div><p>باور</p><h3>Hi4-T</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=poer-hi4-t&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-cannon-phev-studio.png" alt="جي دبليو إم كانون PHEV" loading="lazy"><div><p>باور</p><h3>Cannon PHEV</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=cannon-phev&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-king-kong-cannon-studio.png" alt="جي دبليو إم كينغ كونغ كانون" loading="lazy"><div><p>باور</p><h3>King Kong Cannon</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=king-kong-cannon&amp;market=sa">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-artillery-studio.png" alt="جي دبليو إم أرتيلري" loading="lazy"><div><p>باور</p><h3>Artillery</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=artillery&amp;market=sa">استكشف الطراز</a></div></article>
         </div>
       </div>
     </section>
@@ -188,7 +188,7 @@
         <div class="showcase-stack__content">
           <p class="eyebrow eyebrow--inverse">GWM HAVAL V7</p>
           <h2 id="v7-title">صُممت للاستكشاف</h2>
-          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف</a></div>
+          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html?market=sa">استكشف</a></div>
         </div>
       </article>
 
@@ -199,7 +199,7 @@
           <p class="eyebrow eyebrow--inverse">TANK 500</p>
           <h2 id="tank-title">للطرق الوعرة عند الطلب</h2>
           <p>سيارة دفع رباعي فاخرة تنتقل بثقة من شوارع المدينة إلى المسارات المفتوحة.</p>
-          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف الطراز</a></div>
+          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html?market=sa">استكشف الطراز</a></div>
         </div>
       </article>
 
@@ -209,7 +209,7 @@
         <div class="showcase-stack__content">
           <p class="eyebrow eyebrow--inverse">GWM HAVAL JOLION MAX</p>
           <h2 id="jolion-title">المزيد من كل شيء</h2>
-          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف</a></div>
+          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html?market=sa">استكشف</a></div>
         </div>
       </article>
     </section>
@@ -369,7 +369,7 @@
 
   </main>
 
-<nav class="brand-ribbon" aria-label="استكشف علامات جي دبليو إم"><div class="brand-ribbon__track"><a href="vehicles.html" aria-label="استكشف هافال"><img src="assets/brand/haval-logo.png" alt="هافال"></a><a href="vehicles.html" aria-label="استكشف جي دبليو إم تانك"><img src="assets/brand/gwm-tank-logo.png" alt="جي دبليو إم تانك"></a><a href="vehicles.html" aria-label="استكشف باور"><img src="assets/brand/poer-logo.png" alt="باور"></a><a href="vehicles.html" aria-label="استكشف أورا"><img src="assets/brand/ora-logo.png" alt="أورا"></a><a href="vehicles.html" aria-label="استكشف وينجل"><img src="assets/brand/wingle-logo.png" alt="وينجل"></a></div></nav>
+<nav class="brand-ribbon" aria-label="استكشف علامات جي دبليو إم"><div class="brand-ribbon__track"><a href="vehicles.html?market=sa" aria-label="استكشف هافال"><img src="assets/brand/haval-logo.png" alt="هافال"></a><a href="vehicles.html?market=sa" aria-label="استكشف جي دبليو إم تانك"><img src="assets/brand/gwm-tank-logo.png" alt="جي دبليو إم تانك"></a><a href="vehicles.html?market=sa" aria-label="استكشف باور"><img src="assets/brand/poer-logo.png" alt="باور"></a><a href="vehicles.html?market=sa" aria-label="استكشف أورا"><img src="assets/brand/ora-logo.png" alt="أورا"></a><a href="vehicles.html?market=sa" aria-label="استكشف وينجل"><img src="assets/brand/wingle-logo.png" alt="وينجل"></a></div></nav>
   <footer class="footer" id="footer">
     <div class="container footer__grid"><div class="footer__brand"><img src="assets/brand/gwm-logo-white.png" alt="جي دبليو إم" width="136" height="60"><p>الموزع الرسمي: ADMC — مجموعة AZAQ</p><p>الأحد–الخميس، 9:30–22:00 · الجمعة بعد الصلاة</p><button type="button" data-market-open>المملكة العربية السعودية</button></div><nav aria-label="روابط الطرازات"><h2>الطرازات</h2><a href="#vehicles">سيارات الدفع الرباعي</a><a href="#vehicles">البيك أب</a><a href="#powertrains">الطاقة الجديدة</a><a href="#vehicles">قارن الطرازات</a></nav><nav aria-label="روابط المُلّاك"><h2>المُلّاك</h2><a href="#owners">عناية جي دبليو إم</a><a href="#owners">احجز خدمة</a><a href="#owners">الضمان</a><a href="#owners">أدلة المالك</a></nav><nav aria-label="روابط الشركة"><h2>الشركة</h2><a href="#regional-network">عن جي دبليو إم</a><a href="#newsroom">الأخبار</a><a href="#footer">الوظائف</a><a href="#footer">تواصل معنا</a></nav></div>
     <div class="container footer__bottom"><p>حقوق النشر 2026.</p><div class="social-links"><a href="#footer" aria-label="فيسبوك"><img src="assets/icons/facebook.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="إنستغرام"><img src="assets/icons/instagram.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="يوتيوب"><img src="assets/icons/youtube.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="لينكدإن"><img src="assets/icons/linkedin.svg" alt="" width="18" height="18"></a></div></div>
