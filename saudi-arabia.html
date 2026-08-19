@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="GWM Saudi Arabia concept homepage">
-  <title>GWM Saudi Arabia | Built for the Kingdom’s distances</title>
+  <meta name="description" content="الصفحة الرئيسية لجي دبليو إم المملكة العربية السعودية">
+  <title>جي دبليو إم السعودية | صُنعت لمسافات المملكة</title>
   <link rel="icon" href="assets/brand/gwm-logo-standard.png" type="image/png">
-  <link rel="stylesheet" href="css/styles.css?v=56">
-  <script src="js/app.js?v=45" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=66">
+  <script src="js/app.js?v=48" defer></script>
 </head>
-<body class="intro-active market-saudi">
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+<body class="market-saudi intro-active">
+  <a class="skip-link" href="#main-content">انتقل إلى المحتوى الرئيسي</a>
 
   <div class="intro-brand-logo" aria-hidden="true">
     <img src="assets/brand/gwm-logo-white.png" alt="" width="140" height="60">
@@ -18,171 +18,177 @@
 
   <header class="site-header" data-header>
     <div class="site-header__inner">
-      <button class="icon-button" type="button" aria-label="Open menu" aria-controls="site-menu" aria-expanded="false" data-menu-open>
+      <button class="icon-button" type="button" aria-label="فتح القائمة" aria-controls="site-menu" aria-expanded="false" data-menu-open>
         <img src="assets/icons/menu.svg" alt="" width="20" height="20">
       </button>
-      <a class="site-logo" href="#top" aria-label="GWM Saudi Arabia home">
+      <a class="site-logo" href="#top" aria-label="الصفحة الرئيسية لجي دبليو إم السعودية">
         <img class="site-logo__light" src="assets/brand/gwm-logo-white.png" alt="GWM" width="110" height="48">
         <img class="site-logo__dark" src="assets/brand/gwm-logo-standard.png" alt="GWM" width="110" height="48">
       </a>
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="vehicles.html">Vehicles</a>
-        <a href="#owners">Owners</a>
-        <a href="#regional-network">Fleet &amp; Business</a>
-        <a href="#technology">Technology</a>
-        <a href="#newsroom">Newsroom</a>
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+        <a href="vehicles.html">السيارات</a>
+        <a href="#owners">المُلّاك</a>
+        <a href="#regional-network">الأساطيل والأعمال</a>
+        <a href="#technology">التقنية</a>
+        <a href="#newsroom">الأخبار</a>
       </nav>
       <div class="site-header__actions">
-        <button class="market-button" type="button" aria-label="Choose market" aria-controls="market-selector" aria-expanded="false" data-market-open>
+        <button class="market-button" type="button" aria-label="اختر السوق" aria-controls="market-selector" aria-expanded="false" data-market-open>
           <img src="assets/icons/globe.svg" alt="" width="16" height="16">
         </button>
-        <button class="language-button" type="button" aria-label="Switch to Arabic" data-language-toggle>عربي</button>
-        <button class="icon-button header-search" type="button" aria-label="Search and Ask GWM" data-ask-gwm>
+        <button class="language-button" type="button" aria-label="التبديل إلى الإنجليزية" data-language-toggle>English</button>
+        <button class="icon-button header-search" type="button" aria-label="البحث واسأل جي دبليو إم" data-ask-gwm>
           <img src="assets/icons/search.svg" alt="" width="20" height="20">
         </button>
-        <button class="button button--header" type="button" data-test-drive>Book a test drive</button>
+        <button class="button button--header" type="button" data-test-drive>احجز تجربة قيادة</button>
       </div>
     </div>
   </header>
 
   <section class="market-selector" id="market-selector" aria-hidden="true" data-market-selector>
-    <button class="market-selector__backdrop" type="button" aria-label="Close market selector" data-market-close></button>
+    <button class="market-selector__backdrop" type="button" aria-label="إغلاق اختيار السوق" data-market-close></button>
     <div class="market-selector__panel" role="dialog" aria-modal="true" aria-labelledby="market-selector-title">
       <header class="market-selector__header">
-        <div><p class="eyebrow">GWM Middle East</p><h2 id="market-selector-title">Choose your market</h2></div>
-        <button class="icon-button icon-button--dark" type="button" aria-label="Close market selector" data-market-close><img src="assets/icons/close.svg" alt="" width="20" height="20"></button>
+        <div><p class="eyebrow">جي دبليو إم الشرق الأوسط</p><h2 id="market-selector-title">اختر سوقك</h2></div>
+        <button class="icon-button icon-button--dark" type="button" aria-label="إغلاق اختيار السوق" data-market-close><img src="assets/icons/close.svg" alt="" width="20" height="20"></button>
       </header>
-      <p class="market-selector__intro">Select a country to view its local GWM experience.</p>
-      <ul class="market-selector__grid" aria-label="Available Middle East markets">
-        <li><a href="index.html" ><span>AE</span><strong>United Arab Emirates</strong><img src="assets/icons/arrow-up-right.svg" alt=""></a></li>
-        <li><a href="saudi-arabia.html" aria-current="page"><span>SA</span><strong>Saudi Arabia</strong><img src="assets/icons/arrow-up-right.svg" alt=""></a></li>
-        <li><button type="button" data-placeholder-action="The Kuwait market experience is coming soon."><span>KW</span><strong>Kuwait</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
-        <li><button type="button" data-placeholder-action="The Qatar market experience is coming soon."><span>QA</span><strong>Qatar</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
-        <li><button type="button" data-placeholder-action="The Bahrain market experience is coming soon."><span>BH</span><strong>Bahrain</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
-        <li><button type="button" data-placeholder-action="The Oman market experience is coming soon."><span>OM</span><strong>Oman</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
-        <li><button type="button" data-placeholder-action="The Jordan market experience is coming soon."><span>JO</span><strong>Jordan</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
-        <li><button type="button" data-placeholder-action="The Lebanon market experience is coming soon."><span>LB</span><strong>Lebanon</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
-        <li><button type="button" data-placeholder-action="The Iraq market experience is coming soon."><span>IQ</span><strong>Iraq</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
-        <li><button type="button" data-placeholder-action="The Syria market experience is coming soon."><span>SY</span><strong>Syria</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
+      <p class="market-selector__intro">اختر دولة لعرض تجربة جي دبليو إم المحلية.</p>
+      <ul class="market-selector__grid" aria-label="أسواق الشرق الأوسط المتاحة">
+        <li><a href="index.html"><span>AE</span><strong>الإمارات العربية المتحدة</strong><img src="assets/icons/arrow-up-right.svg" alt=""></a></li>
+        <li><a href="saudi-arabia.html" aria-current="page"><span>SA</span><strong>المملكة العربية السعودية</strong><img src="assets/icons/arrow-up-right.svg" alt=""></a></li>
+        <li><button type="button" data-placeholder-action="تجربة سوق الكويت قريباً."><span>KW</span><strong>الكويت</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
+        <li><button type="button" data-placeholder-action="تجربة سوق قطر قريباً."><span>QA</span><strong>قطر</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
+        <li><button type="button" data-placeholder-action="تجربة سوق البحرين قريباً."><span>BH</span><strong>البحرين</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
+        <li><button type="button" data-placeholder-action="تجربة سوق عُمان قريباً."><span>OM</span><strong>عُمان</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
+        <li><button type="button" data-placeholder-action="تجربة سوق الأردن قريباً."><span>JO</span><strong>الأردن</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
+        <li><button type="button" data-placeholder-action="تجربة سوق لبنان قريباً."><span>LB</span><strong>لبنان</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
+        <li><button type="button" data-placeholder-action="تجربة سوق العراق قريباً."><span>IQ</span><strong>العراق</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
+        <li><button type="button" data-placeholder-action="تجربة سوق سوريا قريباً."><span>SY</span><strong>سوريا</strong><img src="assets/icons/arrow-up-right.svg" alt=""></button></li>
       </ul>
     </div>
   </section>
 
-  <aside class="site-menu" id="site-menu" aria-hidden="true" aria-label="Site menu" data-menu>
+  <aside class="site-menu" id="site-menu" aria-hidden="true" aria-label="قائمة الموقع" data-menu>
     <div class="site-menu__backdrop" data-menu-close></div>
     <div class="site-menu__panel" role="dialog" aria-modal="true" aria-labelledby="menu-title">
       <div class="site-menu__top">
-        <button class="icon-button icon-button--dark" type="button" aria-label="Close menu" data-menu-close>
+        <button class="icon-button icon-button--dark" type="button" aria-label="إغلاق القائمة" data-menu-close>
           <img src="assets/icons/close.svg" alt="" width="20" height="20">
         </button>
         <img src="assets/brand/gwm-logo-standard.png" alt="GWM" width="110" height="48">
       </div>
-      <h2 class="visually-hidden" id="menu-title">Explore GWM Middle East</h2>
+      <h2 class="visually-hidden" id="menu-title">استكشف جي دبليو إم الشرق الأوسط</h2>
       <div class="site-menu__grid">
         <section>
-          <p class="menu-heading">By family</p>
+          <p class="menu-heading">حسب العلامة</p>
           <a href="vehicles.html?brand=HAVAL">HAVAL</a><a href="vehicles.html?brand=TANK">TANK</a><a href="vehicles.html?brand=WINGLE">WINGLE</a><a href="vehicles.html?brand=POER">POER</a>
         </section>
         <section>
-          <p class="menu-heading">Explore</p>
-          <a href="vehicles.html">Vehicle range</a><a href="#powertrains">Powertrains</a><a href="#owners">GWM CARE</a><a href="#regional-network">Find a dealer</a>
+          <p class="menu-heading">استكشف</p>
+          <a href="vehicles.html">مجموعة السيارات</a><a href="#powertrains">أنظمة الدفع</a><a href="#owners">عناية جي دبليو إم</a><a href="#regional-network">ابحث عن وكيل</a>
         </section>
         <section>
-          <p class="menu-heading">Middle East</p>
-          <a href="#regional-network">Regional network</a><a href="#newsroom">Newsroom</a><a href="#footer">About GWM</a>
+          <p class="menu-heading">الشرق الأوسط</p>
+          <a href="#regional-network">الشبكة الإقليمية</a><a href="#newsroom">الأخبار</a><a href="#footer">عن جي دبليو إم</a>
         </section>
       </div>
     </div>
   </aside>
 
   <main id="main-content">
-    <section class="hero" id="top" aria-roledescription="carousel" aria-label="Featured GWM vehicles" data-carousel>
+    <section class="hero" id="top" aria-roledescription="carousel" aria-label="سيارات جي دبليو إم المميزة" data-carousel>
       <div class="hero__slides" aria-live="off">
-        <article class="hero-slide is-active" data-slide>
-          <video muted loop playsinline preload="metadata" poster="assets/images/haval-h9.jpg" aria-label="GWM HAVAL H9 driving sequence">
-            <source src="assets/images/haval-h9-hero.m4v" type="video/mp4">
+        <article class="hero-slide hero-slide--tank-700 is-active" data-slide>
+          <video muted loop playsinline preload="metadata" poster="assets/images/catalog-tank-700-studio.png" aria-label="جي دبليو إم تانك 700 في مشهد سينمائي">
+            <source src="assets/video/gwm-tank-700-hero.mp4" type="video/mp4">
+            متصفحك لا يدعم تشغيل الفيديو. تظهر صورة جي دبليو إم تانك 700 بدلاً منه.
           </video>
           <div class="hero-slide__scrim"></div>
-          <div class="hero-slide__content">
-            <p class="eyebrow eyebrow--inverse" lang="ar" dir="rtl">صُنعت لمسافات المملكة</p>
-            <h1>Built for the Kingdom’s distances.</h1>
-            <p class="hero-slide__copy">From Riyadh to Jeddah on one confident drive — SUVs and pickups engineered for the long road.</p>
+          <div class="hero-slide__content" lang="ar" dir="rtl">
+            <p class="eyebrow eyebrow--inverse">صُنعت لمسافات المملكة</p>
+            <h1>صُنعت لمسافات المملكة.</h1>
+            <p class="hero-slide__copy">من الرياض إلى جدة بثقة على امتداد الطريق — سيارات دفع رباعي وبيك أب مصممة للرحلات الطويلة.</p>
             <div class="button-group">
-              <button class="button" type="button" data-test-drive>Book a test drive</button>
-              <a class="button button--outline" href="vehicles.html">Explore the range</a>
+              <a class="button" href="product.html?model=tank-700">احجز تانك 700 مسبقاً</a>
+              <button class="button button--outline" type="button" data-test-drive>احجز قيادة تجريبية</button>
             </div>
           </div>
-          <div class="hero-slide__identity"><span>GWM SAUDI ARABIA</span><strong>Go with more</strong></div>
+          <div class="hero-slide__identity" lang="ar" dir="rtl"><span>جي دبليو إم تانك 700</span><strong>انطلق إلى أبعد</strong></div>
         </article>
         <article class="hero-slide" data-slide aria-hidden="true">
-          <img src="assets/images/haval-v7.webp" alt="GWM HAVAL V7 driving through a desert landscape">
+          <img src="assets/images/haval-v7.webp" alt="جي دبليو إم هافال V7 في مشهد صحراوي">
           <div class="hero-slide__scrim"></div>
-          <div class="hero-slide__content">
-            <p class="eyebrow eyebrow--inverse">Go with more</p>
-            <h2>Designed to go beyond.</h2>
-            <p class="hero-slide__copy">Meet the GWM HAVAL V7, a bold new expression of adventure for the Middle East.</p>
-            <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore the range</a></div>
+          <div class="hero-slide__content" lang="ar" dir="rtl">
+            <p class="eyebrow eyebrow--inverse">انطلق إلى أبعد</p>
+            <h2>مصممة لتتجاوز الحدود.</h2>
+            <p class="hero-slide__copy">تعرّف على جي دبليو إم هافال V7، تعبير جريء عن روح المغامرة في الشرق الأوسط.</p>
+            <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف الطرازات</a></div>
           </div>
-          <div class="hero-slide__identity"><span>GWM HAVAL V7</span><strong>Built to Explore</strong></div>
+          <div class="hero-slide__identity" lang="ar" dir="rtl"><span>جي دبليو إم هافال V7</span><strong>صُممت للاستكشاف</strong></div>
         </article>
         <article class="hero-slide" data-slide aria-hidden="true">
-          <img src="assets/images/haval-jolion-max.jpg" alt="GWM HAVAL Jolion Max outside a modern building">
+          <img src="assets/images/haval-jolion-max.jpg" alt="جي دبليو إم هافال جوليان ماكس أمام مبنى عصري">
           <div class="hero-slide__scrim"></div>
-          <div class="hero-slide__content">
-            <p class="eyebrow eyebrow--inverse">Go with more</p>
-            <h2>More for every day.</h2>
-            <p class="hero-slide__copy">The GWM HAVAL Jolion Max brings contemporary design and everyday versatility together.</p>
-            <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore the range</a></div>
+          <div class="hero-slide__content" lang="ar" dir="rtl">
+            <p class="eyebrow eyebrow--inverse">انطلق إلى أبعد</p>
+            <h2>المزيد لكل يوم.</h2>
+            <p class="hero-slide__copy">تجمع جي دبليو إم هافال جوليان ماكس بين التصميم العصري والمرونة المناسبة للحياة اليومية.</p>
+            <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف الطرازات</a></div>
           </div>
-          <div class="hero-slide__identity"><span>GWM HAVAL JOLION MAX</span><strong>More of Everything</strong></div>
+          <div class="hero-slide__identity" lang="ar" dir="rtl"><span>جي دبليو إم هافال جوليان ماكس</span><strong>المزيد من كل شيء</strong></div>
         </article>
       </div>
-      <div class="hero__controls" aria-label="Choose featured vehicle">
-        <button class="is-active" type="button" aria-label="Show HAVAL H9" aria-current="true" data-slide-control="0"></button>
-        <button type="button" aria-label="Show HAVAL V7" data-slide-control="1"></button>
-        <button type="button" aria-label="Show HAVAL Jolion Max" data-slide-control="2"></button>
+      <div class="hero__controls" aria-label="اختر السيارة المميزة">
+        <button class="is-active" type="button" aria-label="عرض تانك 700" aria-current="true" data-slide-control="0"></button>
+        <button type="button" aria-label="عرض هافال V7" data-slide-control="1"></button>
+        <button type="button" aria-label="عرض هافال جوليان ماكس" data-slide-control="2"></button>
       </div>
     </section>
 
     <section class="vehicles section" id="vehicles" aria-labelledby="vehicles-title">
       <div class="container">
-        <div class="section-heading"><p class="eyebrow">One GWM, five families</p><h2 id="vehicles-title">The house of GWM.</h2><p>Explore a vehicle family built around different ways of moving.</p></div>
-        <div class="brand-tabs" role="tablist" aria-label="Vehicle family">
-          <button id="brand-tab-haval" type="button" role="tab" aria-selected="true" aria-controls="vehicle-grid" data-brand="HAVAL">HAVAL</button>
-          <button id="brand-tab-tank" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="TANK" tabindex="-1">GWM TANK</button>
-          <button id="brand-tab-wingle" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="WINGLE" tabindex="-1">WINGLE</button>
-          <button id="brand-tab-poer" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="POER" tabindex="-1">POER</button>
+        <div class="section-heading"><p class="eyebrow">جي دبليو إم واحدة، خمس علامات</p><h2 id="vehicles-title">عائلة جي دبليو إم.</h2><p>استكشف مجموعة سيارات صُممت لتناسب أساليب التنقل المختلفة.</p></div>
+        <div class="brand-tabs" role="tablist" aria-label="علامات السيارات">
+          <button id="brand-tab-haval" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="HAVAL">HAVAL</button>
+          <button id="brand-tab-tank" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="TANK">GWM TANK</button>
+          <button id="brand-tab-wingle" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="WINGLE">WINGLE</button>
+          <button id="brand-tab-poer" type="button" role="tab" aria-selected="false" aria-controls="vehicle-grid" data-brand="POER">POER</button>
         </div>
-        <div class="vehicle-grid" id="vehicle-grid" aria-live="polite" aria-labelledby="brand-tab-haval">
-          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h9-studio.png" alt="Black GWM HAVAL H9 in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H9</h3><span>Off-road SUV · Details on request</span><a href="product.html?model=h9">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h7-studio.png" alt="Silver GWM HAVAL H7 in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H7</h3><span>SUV · Details on request</span><a href="product.html?model=h7">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-h6-studio.png" alt="GWM HAVAL H6 facing left in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>H6</h3><span>SUV · Details on request</span><a href="product.html?model=h6">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="HAVAL"><img src="assets/images/catalog-haval-jolion-max-studio.png" alt="GWM HAVAL Jolion Max facing left in a front three-quarter studio view" loading="lazy"><div><p>HAVAL</p><h3>Jolion Max</h3><span>SUV · Details on request</span><a href="product.html?model=jolion-max">Explore model</a></div></article>
+        <div class="vehicle-grid" id="vehicle-grid" aria-live="polite" aria-label="الطرازات ذات الأولوية في السوق السعودي" data-initial-brand="KSA">
+          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">الأكثر مبيعاً</span><img src="assets/images/catalog-wingle-7-studio.png" alt="جي دبليو إم وينجل 7" loading="lazy"><div><p>وينجل</p><h3>Wingle 7</h3><span>بيك أب للعمل والرحلات الطويلة · التفاصيل عند الطلب</span><a href="product.html?model=wingle-7">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">متاحة للحجز المسبق</span><img src="assets/images/catalog-tank-700-studio.png" alt="جي دبليو إم تانك 700" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 700</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-700">احجز مسبقاً</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">للعائلة والمسافات الطويلة</span><img src="assets/images/catalog-haval-h9-studio.png" alt="جي دبليو إم هافال H9" loading="lazy"><div><p>هافال</p><h3>H9</h3><span>سيارة عائلية بسبعة مقاعد · التفاصيل عند الطلب</span><a href="product.html?model=h9">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="KSA"><span class="vehicle-card__badge">قدرات فاخرة</span><img src="assets/images/catalog-tank-500-studio.png" alt="جي دبليو إم تانك 500" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 500</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-500">استكشف الطراز</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-300-studio.png" alt="GWM TANK 300 in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 300</h3><span>SUV · Details on request</span><a href="product.html?model=tank-300">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-400-studio.png" alt="GWM TANK 400 facing left in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 400</h3><span>SUV · Details on request</span><a href="product.html?model=tank-400">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-500-studio.png" alt="GWM TANK 500 in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 500</h3><span>Premium SUV · Details on request</span><a href="product.html?model=tank-500">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-700-studio.png" alt="GWM TANK 700 facing left in a front three-quarter studio view" loading="lazy"><div><p>GWM TANK</p><h3>TANK 700</h3><span>SUV · Details on request</span><a href="product.html?model=tank-700">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h9-studio.png" alt="جي دبليو إم هافال H9 سوداء" loading="lazy"><div><p>هافال</p><h3>H9</h3><span>سيارة دفع رباعي للطرق الوعرة · التفاصيل عند الطلب</span><a href="product.html?model=h9">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h7-studio.png" alt="جي دبليو إم هافال H7 فضية" loading="lazy"><div><p>هافال</p><h3>H7</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=h7">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-h6-studio.png" alt="جي دبليو إم هافال H6" loading="lazy"><div><p>هافال</p><h3>H6</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=h6">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="HAVAL" hidden><img src="assets/images/catalog-haval-jolion-max-studio.png" alt="جي دبليو إم هافال جوليان ماكس" loading="lazy"><div><p>هافال</p><h3>Jolion Max</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=jolion-max">استكشف الطراز</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-5-studio.png" alt="GWM Wingle 5 facing left in a front three-quarter studio view" loading="lazy"><div><p>WINGLE</p><h3>Wingle 5</h3><span>Pickup · Details on request</span><a href="product.html?model=wingle-5">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-7-studio.png" alt="GWM Wingle 7 facing left in a front three-quarter studio view" loading="lazy"><div><p>WINGLE</p><h3>Wingle 7</h3><span>Pickup · Details on request</span><a href="product.html?model=wingle-7">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-300-studio.png" alt="جي دبليو إم تانك 300" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 300</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-300">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-400-studio.png" alt="جي دبليو إم تانك 400" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 400</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-400">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-500-studio.png" alt="جي دبليو إم تانك 500" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 500</h3><span>سيارة دفع رباعي فاخرة · التفاصيل عند الطلب</span><a href="product.html?model=tank-500">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="TANK" hidden><img src="assets/images/catalog-tank-700-studio.png" alt="جي دبليو إم تانك 700" loading="lazy"><div><p>جي دبليو إم تانك</p><h3>TANK 700</h3><span>سيارة دفع رباعي · التفاصيل عند الطلب</span><a href="product.html?model=tank-700">استكشف الطراز</a></div></article>
 
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-poer-hi4-t-studio.png" alt="GWM POER Hi4-T facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Hi4-T</h3><span>Pickup · Details on request</span><a href="product.html?model=poer-hi4-t">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-cannon-phev-studio.png" alt="GWM Cannon PHEV facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Cannon PHEV</h3><span>Pickup · Details on request</span><a href="product.html?model=cannon-phev">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-king-kong-cannon-studio.png" alt="GWM King Kong Cannon facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>King Kong Cannon</h3><span>Pickup · Details on request</span><a href="product.html?model=king-kong-cannon">Explore model</a></div></article>
-          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-artillery-studio.png" alt="GWM Artillery facing left in a front three-quarter studio view" loading="lazy"><div><p>POER</p><h3>Artillery</h3><span>Pickup · Details on request</span><a href="product.html?model=artillery">Explore model</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-5-studio.png" alt="جي دبليو إم وينجل 5" loading="lazy"><div><p>وينجل</p><h3>Wingle 5</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=wingle-5">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="WINGLE" hidden><img src="assets/images/catalog-wingle-7-studio.png" alt="جي دبليو إم وينجل 7" loading="lazy"><div><p>وينجل</p><h3>Wingle 7</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=wingle-7">استكشف الطراز</a></div></article>
+
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-poer-hi4-t-studio.png" alt="جي دبليو إم باور Hi4-T" loading="lazy"><div><p>باور</p><h3>Hi4-T</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=poer-hi4-t">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-cannon-phev-studio.png" alt="جي دبليو إم كانون PHEV" loading="lazy"><div><p>باور</p><h3>Cannon PHEV</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=cannon-phev">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-king-kong-cannon-studio.png" alt="جي دبليو إم كينغ كونغ كانون" loading="lazy"><div><p>باور</p><h3>King Kong Cannon</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=king-kong-cannon">استكشف الطراز</a></div></article>
+          <article class="vehicle-card" data-vehicle-brand="POER" hidden><img src="assets/images/catalog-artillery-studio.png" alt="جي دبليو إم أرتيلري" loading="lazy"><div><p>باور</p><h3>Artillery</h3><span>بيك أب · التفاصيل عند الطلب</span><a href="product.html?model=artillery">استكشف الطراز</a></div></article>
         </div>
       </div>
     </section>
 
-    <section class="showcase-stack" aria-label="Featured GWM vehicles">
+    <section class="showcase-stack" aria-label="سيارات جي دبليو إم المميزة">
       <article class="showcase-stack__panel" aria-labelledby="v7-title">
         <img src="assets/images/showcase-haval-v7-lifestyle.png" alt="GWM HAVAL V7 overlooking a mountain lake beside a family campsite" loading="lazy">
         <div class="showcase-stack__scrim"></div>
         <div class="showcase-stack__content">
           <p class="eyebrow eyebrow--inverse">GWM HAVAL V7</p>
-          <h2 id="v7-title">Built to Explore</h2>
-          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore</a></div>
+          <h2 id="v7-title">صُممت للاستكشاف</h2>
+          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف</a></div>
         </div>
       </article>
 
@@ -191,9 +197,9 @@
         <div class="showcase-stack__scrim"></div>
         <div class="showcase-stack__content">
           <p class="eyebrow eyebrow--inverse">TANK 500</p>
-          <h2 id="tank-title">Offroad on demand</h2>
-          <p>A premium SUV concept for journeys that move from city streets to open terrain.</p>
-          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore the model</a></div>
+          <h2 id="tank-title">للطرق الوعرة عند الطلب</h2>
+          <p>سيارة دفع رباعي فاخرة تنتقل بثقة من شوارع المدينة إلى المسارات المفتوحة.</p>
+          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف الطراز</a></div>
         </div>
       </article>
 
@@ -202,54 +208,60 @@
         <div class="showcase-stack__scrim"></div>
         <div class="showcase-stack__content">
           <p class="eyebrow eyebrow--inverse">GWM HAVAL JOLION MAX</p>
-          <h2 id="jolion-title">More of Everything</h2>
-          <div class="button-group"><button class="button" type="button" data-test-drive>Book a test drive</button><a class="button button--outline" href="vehicles.html">Explore</a></div>
+          <h2 id="jolion-title">المزيد من كل شيء</h2>
+          <div class="button-group"><button class="button" type="button" data-test-drive>احجز تجربة قيادة</button><a class="button button--outline" href="vehicles.html">استكشف</a></div>
         </div>
       </article>
     </section>
 
     <section class="powertrains section" id="powertrains" aria-labelledby="powertrain-title" data-powertrain-explorer>
       <div class="container">
-        <div class="section-heading powertrains__heading"><p class="eyebrow">Powertrain explorer</p><h2 id="powertrain-title">Choose how you move.</h2><p>Explore the GWM electrified range and find the powertrain that fits your journey.</p></div>
+        <div class="section-heading powertrains__heading"><p class="eyebrow">استكشف أنظمة الدفع</p><h2 id="powertrain-title">اختر أسلوب تنقلك.</h2><p>كفاءة هجينة للمسافات الطويلة من دون الحاجة إلى قابس، مع خيارات كهربائية بالكامل تواكب نمو شبكة المملكة.</p></div>
 
-        <div class="powertrain-tabs" role="tablist" aria-label="Choose a powertrain">
-          <button type="button" role="tab" aria-selected="true" aria-controls="powertrain-bev" id="powertrain-tab-bev" data-powertrain-tab="0"><img src="assets/icons/powertrain-bolt.svg" alt=""><strong>BEV</strong><span>Battery Electric</span></button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-hev" id="powertrain-tab-hev" data-powertrain-tab="1" tabindex="-1"><img src="assets/icons/powertrain-engine.svg" alt=""><strong>HEV</strong><span>Self-Charging Hybrid</span></button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-phev" id="powertrain-tab-phev" data-powertrain-tab="2" tabindex="-1"><img src="assets/icons/powertrain-engine-plug.svg" alt=""><strong>PHEV</strong><span>Plug-in Hybrid</span></button>
+        <div class="powertrain-tabs" role="tablist" aria-label="اختر نظام الدفع">
+          <button type="button" role="tab" aria-selected="true" aria-controls="powertrain-ice" id="powertrain-tab-ice" data-powertrain-tab="0"><img src="assets/icons/powertrain-engine.svg" alt=""><strong>ICE</strong><span>محرك احتراق داخلي</span></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-hev" id="powertrain-tab-hev" data-powertrain-tab="1" tabindex="-1"><img src="assets/icons/powertrain-engine.svg" alt=""><strong>HEV</strong><span>هجين ذاتي الشحن</span></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-phev" id="powertrain-tab-phev" data-powertrain-tab="2" tabindex="-1"><img src="assets/icons/powertrain-engine-plug.svg" alt=""><strong>PHEV</strong><span>هجين قابل للشحن</span></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="powertrain-bev" id="powertrain-tab-bev" data-powertrain-tab="3" tabindex="-1"><img src="assets/icons/powertrain-bolt.svg" alt=""><strong>BEV</strong><span>كهربائي بالبطارية</span></button>
         </div>
 
         <div class="powertrain-stage">
           <button class="powertrain-stage__arrow powertrain-stage__arrow--previous" type="button" aria-label="Previous powertrain" data-powertrain-previous><img src="assets/icons/arrow-left.svg" alt=""></button>
 
-          <article class="powertrain-panel is-active" id="powertrain-bev" role="tabpanel" aria-labelledby="powertrain-tab-bev" data-powertrain-panel="0">
-            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-bev.jpg" alt="GWM ORA and SUV electric vehicles outside modern architecture" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-battery.svg" alt=""></span><figcaption><span>01 / 03</span><i aria-hidden="true"></i></figcaption></figure>
-            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">BEV</p><h3>Battery Electric Vehicles</h3><p>Explore fully electric mobility designed for quiet, responsive everyday journeys.</p><ul><li><img src="assets/icons/powertrain-battery.svg" alt=""><span>Electric<br>powertrain</span></li><li><img src="assets/icons/powertrain-leaf.svg" alt=""><span>Everyday<br>versatility</span></li><li><img src="assets/icons/powertrain-charge.svg" alt=""><span>Market availability<br>varies</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>Explore BEV models</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="Powertrain comparison details are awaiting approved regional content."><span>Compare powertrains</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
+          <article class="powertrain-panel is-active" id="powertrain-ice" role="tabpanel" aria-labelledby="powertrain-tab-ice" data-powertrain-panel="0">
+            <figure class="powertrain-panel__media"><img src="assets/images/wingle-7.jpg" alt="جي دبليو إم وينجل 7 على الطريق" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine.svg" alt=""></span><figcaption><span>01 / 04</span><i aria-hidden="true"></i></figcaption></figure>
+            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">ICE</p><h3>محركات الاحتراق الداخلي</h3><p>قوة عملية ومدى مناسب للرحلات الطويلة والعمل اليومي في أنحاء المملكة.</p><ul><li><img src="assets/icons/powertrain-engine.svg" alt=""><span>أداء<br>مجرّب</span></li><li><img src="assets/icons/powertrain-fuel.svg" alt=""><span>مدى مناسب<br>للمسافات الطويلة</span></li><li><img src="assets/icons/powertrain-steering.svg" alt=""><span>خيارات دفع<br>متعددة</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>استكشف طرازات البنزين</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="تفاصيل مقارنة أنظمة الدفع بانتظار المحتوى المحلي المعتمد."><span>قارن أنظمة الدفع</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
+          </article>
+
+          <article class="powertrain-panel" id="powertrain-bev" role="tabpanel" aria-labelledby="powertrain-tab-bev" data-powertrain-panel="3" hidden>
+            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-bev.jpg" alt="سيارات جي دبليو إم الكهربائية أمام عمارة حديثة" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-battery.svg" alt=""></span><figcaption><span>04 / 04</span><i aria-hidden="true"></i></figcaption></figure>
+            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">BEV</p><h3>السيارات الكهربائية بالبطارية</h3><p>تنقّل كهربائي بالكامل لرحلات يومية هادئة وسريعة الاستجابة.</p><ul><li><img src="assets/icons/powertrain-battery.svg" alt=""><span>نظام دفع<br>كهربائي</span></li><li><img src="assets/icons/powertrain-leaf.svg" alt=""><span>مرونة<br>يومية</span></li><li><img src="assets/icons/powertrain-charge.svg" alt=""><span>التوفر يختلف<br>حسب السوق</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>استكشف الطرازات الكهربائية</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="تفاصيل مقارنة أنظمة الدفع بانتظار المحتوى الإقليمي المعتمد."><span>قارن أنظمة الدفع</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
           </article>
 
           <article class="powertrain-panel" id="powertrain-hev" role="tabpanel" aria-labelledby="powertrain-tab-hev" data-powertrain-panel="1" hidden>
-            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-hev.jpg" alt="GWM TANK 500 hybrid driving through desert terrain" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine.svg" alt=""></span><figcaption><span>02 / 03</span><i aria-hidden="true"></i></figcaption></figure>
-            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">HEV</p><h3>Self-Charging Hybrid Vehicles</h3><p>No plugs, no fuss. Petrol and electric power work together seamlessly for efficient, confident everyday driving.</p><ul><li><img src="assets/icons/powertrain-cycle.svg" alt=""><span>Self-Charging</span></li><li><img src="assets/icons/powertrain-fuel.svg" alt=""><span>Lower<br>Fuel Use</span></li><li><img src="assets/icons/powertrain-steering.svg" alt=""><span>Smooth<br>Hybrid Drive</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>Explore HEV models</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="Powertrain comparison details are awaiting approved regional content."><span>Compare powertrains</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
+            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-hev.jpg" alt="جي دبليو إم تانك 500 هجينة في تضاريس صحراوية" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine.svg" alt=""></span><figcaption><span>02 / 04</span><i aria-hidden="true"></i></figcaption></figure>
+            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">HEV</p><h3>السيارات الهجينة ذاتية الشحن</h3><p>كفاءة هجينة لمسافات المملكة الطويلة من دون الحاجة إلى قابس.</p><ul><li><img src="assets/icons/powertrain-cycle.svg" alt=""><span>شحن ذاتي</span></li><li><img src="assets/icons/powertrain-fuel.svg" alt=""><span>استهلاك وقود<br>أقل</span></li><li><img src="assets/icons/powertrain-steering.svg" alt=""><span>قيادة هجينة<br>سلسة</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>استكشف الطرازات الهجينة</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="تفاصيل مقارنة أنظمة الدفع بانتظار المحتوى الإقليمي المعتمد."><span>قارن أنظمة الدفع</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
           </article>
 
           <article class="powertrain-panel" id="powertrain-phev" role="tabpanel" aria-labelledby="powertrain-tab-phev" data-powertrain-panel="2" hidden>
-            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-phev.jpg" alt="GWM plug-in hybrid vehicle connected to a home charger" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine-plug.svg" alt=""></span><figcaption><span>03 / 03</span><i aria-hidden="true"></i></figcaption></figure>
-            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">PHEV</p><h3>Plug-in Hybrid Vehicles</h3><p>The best of both worlds. Drive on electric power for everyday journeys, with petrol support when you need to go further.</p><ul><li><img src="assets/icons/powertrain-bolt.svg" alt=""><span>Electric<br>+ Petrol</span></li><li><img src="assets/icons/powertrain-leaf.svg" alt=""><span>Flexible<br>Range</span></li><li><img src="assets/icons/powertrain-plug.svg" alt=""><span>Plug-in<br>Charging</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>Explore PHEV models</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="Powertrain comparison details are awaiting approved regional content."><span>Compare powertrains</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
+            <figure class="powertrain-panel__media"><img src="assets/images/powertrain-phev.jpg" alt="سيارة جي دبليو إم هجينة قابلة للشحن متصلة بشاحن منزلي" loading="lazy"><span class="powertrain-panel__badge" aria-hidden="true"><img src="assets/icons/powertrain-engine-plug.svg" alt=""></span><figcaption><span>03 / 04</span><i aria-hidden="true"></i></figcaption></figure>
+            <div class="powertrain-panel__content"><p class="eyebrow powertrain-panel__label">PHEV</p><h3>السيارات الهجينة القابلة للشحن</h3><p>قوة كهربائية للرحلات اليومية مع دعم البنزين عندما تحتاج إلى مدى أبعد.</p><ul><li><img src="assets/icons/powertrain-bolt.svg" alt=""><span>كهرباء<br>وبنزين</span></li><li><img src="assets/icons/powertrain-leaf.svg" alt=""><span>مدى<br>مرن</span></li><li><img src="assets/icons/powertrain-plug.svg" alt=""><span>شحن<br>بالقابس</span></li></ul><a class="powertrain-panel__cta" href="#vehicles"><span>استكشف الطرازات الهجينة القابلة للشحن</span><img src="assets/icons/arrow-right.svg" alt=""></a><button class="powertrain-panel__compare" type="button" data-placeholder-action="تفاصيل مقارنة أنظمة الدفع بانتظار المحتوى الإقليمي المعتمد."><span>قارن أنظمة الدفع</span><img src="assets/icons/arrow-right.svg" alt=""></button></div>
           </article>
 
           <button class="powertrain-stage__arrow powertrain-stage__arrow--next" type="button" aria-label="Next powertrain" data-powertrain-next><img src="assets/icons/arrow-right.svg" alt=""></button>
         </div>
-        <p class="powertrains__hint"><img src="assets/icons/info-circle.svg" alt="">Select a powertrain to explore</p>
+        <p class="powertrains__hint"><img src="assets/icons/info-circle.svg" alt="">اختر نظام دفع لاستكشافه</p>
       </div>
     </section>
 
     <section class="pillars section section--soft" aria-labelledby="pillars-title">
       <div class="container">
-        <div class="section-heading"><p class="eyebrow">Brand positioning</p><h2 id="pillars-title">Made for more ways to move.</h2></div>
+        <div class="section-heading"><p class="eyebrow">هوية العلامة</p><h2 id="pillars-title">صُممت لأساليب تنقّل أكثر.</h2></div>
         <div class="pillars__stage">
           <ol class="pillar-grid">
-            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="m19.5 12.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/></svg></div><h3>All scenarios</h3><p>From everyday city travel to open-road exploration.</p><a href="#vehicles" aria-label="Explore vehicles for all scenarios"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
-            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M18 3 9 17h7l-2 12 9-15h-7l2-11Z"/></svg></div><h3>All powertrains</h3><p>A broad approach to mobility, shaped by market availability.</p><a href="#powertrains" aria-label="Explore all powertrains"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
-            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="12" cy="11" r="4"/><circle cx="22" cy="13" r="3"/><path d="M4 27c0-6 3-9 8-9s8 3 8 9M19 20c5 0 8 2 8 7"/></svg></div><h3>All users</h3><p>Vehicles and ownership experiences designed around real regional needs.</p><a href="#regional-network" aria-label="Explore regional GWM experiences"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="m19.5 12.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/></svg></div><h3>لكل الطرق</h3><p>من التنقل اليومي داخل المدينة إلى استكشاف الطرق المفتوحة.</p><a href="#vehicles" aria-label="استكشف السيارات لكل الطرق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M18 3 9 17h7l-2 12 9-15h-7l2-11Z"/></svg></div><h3>كل أنظمة الدفع</h3><p>خيارات تنقل متعددة تتوافق مع التوفر في السوق.</p><a href="#powertrains" aria-label="استكشف جميع أنظمة الدفع"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+            <li><div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="12" cy="11" r="4"/><circle cx="22" cy="13" r="3"/><path d="M4 27c0-6 3-9 8-9s8 3 8 9M19 20c5 0 8 2 8 7"/></svg></div><h3>لكل المستخدمين</h3><p>سيارات وتجارب ملكية صُممت حول احتياجات المنطقة الحقيقية.</p><a href="#regional-network" aria-label="استكشف تجارب جي دبليو إم الإقليمية"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
           </ol>
         </div>
       </div>
@@ -263,24 +275,24 @@
       </div>
       <div class="technology__scrim"></div>
       <div class="container technology__inner">
-        <header class="technology__intro"><p class="eyebrow eyebrow--inverse">Technology</p><h2 id="technology-title">Tech to enjoy every journey.</h2></header>
+        <header class="technology__intro"><p class="eyebrow eyebrow--inverse">التقنية</p><h2 id="technology-title">تقنيات ترتقي بكل رحلة.</h2></header>
 
         <div class="technology__panels" aria-live="polite">
           <article class="technology__panel is-active" id="technology-hi4" role="tabpanel" aria-labelledby="technology-tab-hi4" data-technology-panel="0">
-            <p class="technology__code">Hi4</p><h3>Intelligent driving technology</h3><p>Powertrain technology designed to make performance feel confident and straightforward. Availability varies by model and market.</p>
+            <p class="technology__code">Hi4</p><h3>تقنية قيادة ذكية</h3><p>تقنية لأنظمة الدفع تجعل الأداء أكثر ثقة وسهولة. يختلف التوفر حسب الطراز والسوق.</p>
           </article>
           <article class="technology__panel" id="technology-os3" role="tabpanel" aria-labelledby="technology-tab-os3" data-technology-panel="1" hidden>
-            <p class="technology__code">OS 3</p><h3>A connected cockpit</h3><p>A digital in-vehicle experience designed to keep essential information and controls within easy reach. Features vary by model and market.</p>
+            <p class="technology__code">OS 3</p><h3>مقصورة متصلة</h3><p>تجربة رقمية تضع المعلومات وأدوات التحكم الأساسية في متناولك. تختلف المزايا حسب الطراز والسوق.</p>
           </article>
           <article class="technology__panel" id="technology-me" role="tabpanel" aria-labelledby="technology-tab-me" data-technology-panel="2" hidden>
-            <p class="technology__code">ME</p><h3>Regional validation</h3><p>Vehicle testing and validation shaped around the demands of Middle East journeys. Approved regional details are pending.</p>
+            <p class="technology__code">ME</p><h3>اختبارات إقليمية</h3><p>اختبارات واعتمادات تراعي متطلبات الرحلات في الشرق الأوسط. التفاصيل الإقليمية المعتمدة قيد التحديث.</p>
           </article>
         </div>
 
-        <div class="technology__tabs" role="tablist" aria-label="Technology topics">
-          <button type="button" role="tab" aria-selected="true" aria-controls="technology-hi4" id="technology-tab-hi4" data-technology-tab="0"><strong>Hi4</strong><span>Intelligent driving technology</span></button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="technology-os3" id="technology-tab-os3" data-technology-tab="1" tabindex="-1"><strong>OS 3</strong><span>A connected cockpit</span></button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="technology-me" id="technology-tab-me" data-technology-tab="2" tabindex="-1"><strong>ME</strong><span>Regional validation</span></button>
+        <div class="technology__tabs" role="tablist" aria-label="موضوعات التقنية">
+          <button type="button" role="tab" aria-selected="true" aria-controls="technology-hi4" id="technology-tab-hi4" data-technology-tab="0"><strong>Hi4</strong><span>تقنية قيادة ذكية</span></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="technology-os3" id="technology-tab-os3" data-technology-tab="1" tabindex="-1"><strong>OS 3</strong><span>مقصورة متصلة</span></button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="technology-me" id="technology-tab-me" data-technology-tab="2" tabindex="-1"><strong>ME</strong><span>اختبارات إقليمية</span></button>
         </div>
       </div>
     </section>
@@ -288,12 +300,12 @@
     <section class="care" id="owners" aria-labelledby="care-title">
       <div class="container care__inner">
         <div class="care__content">
-          <p class="eyebrow">GWM CARE</p>
-          <h2 id="care-title">Confidence beyond the drive.</h2>
-          <p>Service, warranty and ownership information designed to support every stage of the journey. Availability will be tailored to each market.</p>
+          <p class="eyebrow">عناية جي دبليو إم</p>
+          <h2 id="care-title">ثقة تمتد لما بعد القيادة.</h2>
+          <p>باقات خدمة للمسافات الطويلة عبر مراكز ADMC في الرياض وجدة والدمام، مع معلومات الضمان والملكية للسوق السعودي.</p>
           <div class="button-group">
-            <button class="button button--primary" type="button" data-placeholder-action="Service booking is not connected in this prototype.">Book a service</button>
-            <button class="text-link" type="button" data-placeholder-action="Dealer search is not connected in this prototype.">Find a dealer</button>
+            <button class="button button--primary" type="button" data-placeholder-action="حجز الخدمة غير متصل في هذا النموذج.">احجز خدمة</button>
+            <button class="text-link" type="button" data-placeholder-action="البحث عن وكيل غير متصل في هذا النموذج.">ابحث عن وكيل</button>
           </div>
         </div>
 
@@ -303,14 +315,14 @@
             Your browser does not support embedded video.
           </video>
 
-          <button class="care__play" type="button" data-care-play aria-label="Play GWM CARE video">
+          <button class="care__play" type="button" data-care-play aria-label="تشغيل فيديو عناية جي دبليو إم">
             <span aria-hidden="true"></span>
           </button>
 
-          <div class="care__services" aria-label="Ownership support areas" data-care-details>
-            <button type="button" data-placeholder-action="Service booking is not connected in this prototype."><span><strong>Service booking</strong><small>Plan your next workshop visit.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
-            <button type="button" data-placeholder-action="Warranty information is not connected in this prototype."><span><strong>Warranty information</strong><small>Review market-specific coverage.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
-            <button type="button" data-placeholder-action="Owner support is not connected in this prototype."><span><strong>Owner support</strong><small>Find help throughout ownership.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
+          <div class="care__services" aria-label="خدمات دعم المُلّاك" data-care-details>
+            <button type="button" data-placeholder-action="حجز الخدمة غير متصل في هذا النموذج."><span><strong>حجز الخدمة</strong><small>خطط لزيارتك القادمة إلى مركز الصيانة.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
+            <button type="button" data-placeholder-action="معلومات الضمان غير متصلة في هذا النموذج."><span><strong>معلومات الضمان</strong><small>راجع التغطية الخاصة بالسوق.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
+            <button type="button" data-placeholder-action="دعم المُلّاك غير متصل في هذا النموذج."><span><strong>دعم المُلّاك</strong><small>احصل على المساعدة طوال فترة الملكية.</small></span><img src="assets/icons/arrow-up-right.svg" alt=""></button>
           </div>
         </figure>
       </div>
@@ -320,63 +332,63 @@
       <div class="container network__inner">
         <header class="network__intro">
           <div class="network__heading">
-            <p class="eyebrow">GWM in Saudi Arabia</p>
-            <h2 id="network-title">Across the Kingdom.<br>Ready for the road.</h2>
+            <p class="eyebrow">جي دبليو إم في السعودية</p>
+            <h2 id="network-title">في أنحاء المملكة.<br>جاهزون للطريق.</h2>
           </div>
           <div class="network__summary" aria-label="Saudi Arabia priority cities">
             <strong>05</strong>
-            <span>Priority<br>cities</span>
-            <p>Discover GWM across Riyadh, Jeddah, Dammam, Makkah and Madinah.</p>
+            <span>مدن<br>رئيسية</span>
+            <p>ابدأ من الرياض، موطن أكبر مركز جي دبليو إم في الشرق الأوسط، ثم اكتشف شبكتنا في جدة والدمام ومكة المكرمة والمدينة المنورة.</p>
           </div>
         </header>
 
         <div class="network__directory">
           <div class="network__directory-heading">
-            <p>Find GWM in Saudi Arabia</p>
-            <span>Dealer and service information for the Kingdom will be connected to approved distributor sources.</span>
+            <p>مركز البحث الافتراضي: الرياض</p>
+            <span>الموقع المميز: أكبر مركز جي دبليو إم في الشرق الأوسط — الرياض. ترتبط بيانات الوكلاء والخدمة بمصادر ADMC المعتمدة.</span>
           </div>
-          <ul class="market-list" aria-label="Middle East markets">
-            <li><a href="index.html" ><span>AE</span><strong>United Arab Emirates</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></a></li>
-            <li><a href="saudi-arabia.html" aria-current="page"><span>SA</span><strong>Saudi Arabia</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></a></li>
-            <li><button type="button" data-placeholder-action="The Kuwait market website is not connected in this prototype."><span>KW</span><strong>Kuwait</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
-            <li><button type="button" data-placeholder-action="The Qatar market website is not connected in this prototype."><span>QA</span><strong>Qatar</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
-            <li><button type="button" data-placeholder-action="The Bahrain market website is not connected in this prototype."><span>BH</span><strong>Bahrain</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
-            <li><button type="button" data-placeholder-action="The Oman market website is not connected in this prototype."><span>OM</span><strong>Oman</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
-            <li><button type="button" data-placeholder-action="The Jordan market website is not connected in this prototype."><span>JO</span><strong>Jordan</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
-            <li><button type="button" data-placeholder-action="The Lebanon market website is not connected in this prototype."><span>LB</span><strong>Lebanon</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
-            <li><button type="button" data-placeholder-action="The Iraq market website is not connected in this prototype."><span>IQ</span><strong>Iraq</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
-            <li><button type="button" data-placeholder-action="The Syria market website is not connected in this prototype."><span>SY</span><strong>Syria</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
+          <ul class="market-list" aria-label="أسواق الشرق الأوسط">
+            <li><a href="index.html"><span>AE</span><strong>الإمارات العربية المتحدة</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></a></li>
+            <li><a href="saudi-arabia.html" aria-current="page"><span>SA</span><strong>المملكة العربية السعودية</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></a></li>
+            <li><button type="button" data-placeholder-action="موقع سوق الكويت غير متصل في هذا النموذج."><span>KW</span><strong>الكويت</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
+            <li><button type="button" data-placeholder-action="موقع سوق قطر غير متصل في هذا النموذج."><span>QA</span><strong>قطر</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
+            <li><button type="button" data-placeholder-action="موقع سوق البحرين غير متصل في هذا النموذج."><span>BH</span><strong>البحرين</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
+            <li><button type="button" data-placeholder-action="موقع سوق عُمان غير متصل في هذا النموذج."><span>OM</span><strong>عُمان</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
+            <li><button type="button" data-placeholder-action="موقع سوق الأردن غير متصل في هذا النموذج."><span>JO</span><strong>الأردن</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
+            <li><button type="button" data-placeholder-action="موقع سوق لبنان غير متصل في هذا النموذج."><span>LB</span><strong>لبنان</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
+            <li><button type="button" data-placeholder-action="موقع سوق العراق غير متصل في هذا النموذج."><span>IQ</span><strong>العراق</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
+            <li><button type="button" data-placeholder-action="موقع سوق سوريا غير متصل في هذا النموذج."><span>SY</span><strong>سوريا</strong><img src="assets/icons/arrow-up-right.svg" alt="" aria-hidden="true"></button></li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="news section" id="newsroom" aria-labelledby="news-title">
-      <div class="container"><div class="section-heading section-heading--rule"><p class="eyebrow">Newsroom</p><h2 id="news-title">From the region.</h2></div><div class="news-grid"><article><img src="assets/images/tank-300.jpg" alt="GWM TANK 300" loading="lazy"><p>Regional</p><h3>Middle East newsroom story placeholder</h3><span>Date pending</span></article><article><img src="assets/images/haval-jolion-pro.jpg" alt="GWM HAVAL Jolion Pro" loading="lazy"><p>Network</p><h3>Regional network update placeholder</h3><span>Date pending</span></article><article><img src="assets/images/tank-500.jpg" alt="GWM TANK 500" loading="lazy"><p>Product</p><h3>Product announcement placeholder</h3><span>Date pending</span></article></div></div>
+      <div class="container"><div class="section-heading section-heading--rule"><p class="eyebrow">الأخبار</p><h2 id="news-title">من المنطقة.</h2></div><div class="news-grid"><article><img src="assets/images/tank-300.jpg" alt="جي دبليو إم تانك 300" loading="lazy"><p>إقليمي</p><h3>قصة إخبارية من الشرق الأوسط</h3><span>التاريخ قيد التحديث</span></article><article><img src="assets/images/haval-jolion-pro.jpg" alt="جي دبليو إم هافال جوليان برو" loading="lazy"><p>الشبكة</p><h3>تحديث الشبكة الإقليمية</h3><span>التاريخ قيد التحديث</span></article><article><img src="assets/images/tank-500.jpg" alt="جي دبليو إم تانك 500" loading="lazy"><p>المنتجات</p><h3>إعلان عن منتج</h3><span>التاريخ قيد التحديث</span></article></div></div>
     </section>
 
   </main>
 
-<nav class="brand-ribbon" aria-label="Explore GWM brands"><div class="brand-ribbon__track"><a href="vehicles.html" aria-label="Explore GWM HAVAL"><img src="assets/brand/haval-logo.png" alt="HAVAL"></a><a href="vehicles.html" aria-label="Explore GWM TANK"><img src="assets/brand/gwm-tank-logo.png" alt="GWM TANK"></a><a href="vehicles.html" aria-label="Explore GWM POER"><img src="assets/brand/poer-logo.png" alt="POER"></a><a href="vehicles.html" aria-label="Explore GWM ORA"><img src="assets/brand/ora-logo.png" alt="ORA"></a><a href="vehicles.html" aria-label="Explore GWM WINGLE"><img src="assets/brand/wingle-logo.png" alt="WINGLE"></a></div></nav>
+<nav class="brand-ribbon" aria-label="استكشف علامات جي دبليو إم"><div class="brand-ribbon__track"><a href="vehicles.html" aria-label="استكشف هافال"><img src="assets/brand/haval-logo.png" alt="هافال"></a><a href="vehicles.html" aria-label="استكشف جي دبليو إم تانك"><img src="assets/brand/gwm-tank-logo.png" alt="جي دبليو إم تانك"></a><a href="vehicles.html" aria-label="استكشف باور"><img src="assets/brand/poer-logo.png" alt="باور"></a><a href="vehicles.html" aria-label="استكشف أورا"><img src="assets/brand/ora-logo.png" alt="أورا"></a><a href="vehicles.html" aria-label="استكشف وينجل"><img src="assets/brand/wingle-logo.png" alt="وينجل"></a></div></nav>
   <footer class="footer" id="footer">
-    <div class="container footer__grid"><div class="footer__brand"><img src="assets/brand/gwm-logo-white.png" alt="GWM" width="136" height="60"><p>Go with more</p><button type="button" data-market-open>Saudi Arabia</button></div><nav aria-label="Model links"><h2>Models</h2><a href="#vehicles">SUVs</a><a href="#vehicles">Pickups</a><a href="#powertrains">New energy</a><a href="#vehicles">Compare models</a></nav><nav aria-label="Owner links"><h2>Owners</h2><a href="#owners">GWM CARE</a><a href="#owners">Book a service</a><a href="#owners">Warranty</a><a href="#owners">Owner manuals</a></nav><nav aria-label="Company links"><h2>Company</h2><a href="#regional-network">About GWM</a><a href="#newsroom">Newsroom</a><a href="#footer">Careers</a><a href="#footer">Contact</a></nav></div>
-    <div class="container footer__bottom"><p>Copyright 2026.</p><div class="social-links"><a href="#footer" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="" width="18" height="18"></a></div></div>
+    <div class="container footer__grid"><div class="footer__brand"><img src="assets/brand/gwm-logo-white.png" alt="جي دبليو إم" width="136" height="60"><p>الموزع الرسمي: ADMC — مجموعة AZAQ</p><p>الأحد–الخميس، 9:30–22:00 · الجمعة بعد الصلاة</p><button type="button" data-market-open>المملكة العربية السعودية</button></div><nav aria-label="روابط الطرازات"><h2>الطرازات</h2><a href="#vehicles">سيارات الدفع الرباعي</a><a href="#vehicles">البيك أب</a><a href="#powertrains">الطاقة الجديدة</a><a href="#vehicles">قارن الطرازات</a></nav><nav aria-label="روابط المُلّاك"><h2>المُلّاك</h2><a href="#owners">عناية جي دبليو إم</a><a href="#owners">احجز خدمة</a><a href="#owners">الضمان</a><a href="#owners">أدلة المالك</a></nav><nav aria-label="روابط الشركة"><h2>الشركة</h2><a href="#regional-network">عن جي دبليو إم</a><a href="#newsroom">الأخبار</a><a href="#footer">الوظائف</a><a href="#footer">تواصل معنا</a></nav></div>
+    <div class="container footer__bottom"><p>حقوق النشر 2026.</p><div class="social-links"><a href="#footer" aria-label="فيسبوك"><img src="assets/icons/facebook.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="إنستغرام"><img src="assets/icons/instagram.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="يوتيوب"><img src="assets/icons/youtube.svg" alt="" width="18" height="18"></a><a href="#footer" aria-label="لينكدإن"><img src="assets/icons/linkedin.svg" alt="" width="18" height="18"></a></div></div>
   </footer>
 
-  <button class="ask-gwm" type="button" data-ask-gwm>✦ Ask GWM</button>
+  <button class="ask-gwm" type="button" data-ask-gwm>✦ اسأل جي دبليو إم</button>
   <div class="toast" role="status" aria-live="polite" hidden data-toast></div>
 
   <dialog class="test-drive-dialog" id="test-drive-dialog" aria-labelledby="test-drive-title" data-test-drive-dialog>
-    <form data-test-drive-form><div class="dialog-top"><div><p class="eyebrow">Next step</p><h2 id="test-drive-title">Book a test drive</h2></div><button class="icon-button icon-button--dark" type="button" aria-label="Close" data-test-drive-close><img src="assets/icons/close.svg" alt="" width="20" height="20"></button></div><p>Choose your vehicle and preferred location. This local prototype validates the enquiry without transmitting personal data.</p><label>Preferred model<select name="model" required><option value="">Choose a model</option><option>HAVAL H9</option><option>HAVAL H7</option><option>HAVAL H6</option><option>HAVAL Jolion Max</option><option>TANK 300</option><option>TANK 500</option><option>POER Cannon PHEV</option></select></label><div class="form-row"><label>Country<select name="country" required><option selected>Saudi Arabia</option><option>United Arab Emirates</option><option>Kuwait</option><option>Qatar</option><option>Bahrain</option><option>Oman</option></select></label><label>City<input name="city" required autocomplete="address-level2"></label></div><label>Full name<input name="name" required autocomplete="name" placeholder="Your name"></label><label>Email<input name="email" required type="email" autocomplete="email" placeholder="name@example.com"></label><label>Mobile<input name="mobile" required type="tel" autocomplete="tel" placeholder="+966"></label><label class="consent-row"><input name="consent" type="checkbox" required><span>I agree to be contacted about this test-drive request.</span></label><button class="button" type="submit">Submit request</button><div class="form-success" hidden data-test-drive-success role="status"><strong>Request received</strong><span>Your local reference is GWM-ME-4102. No data was transmitted.</span></div></form>
+    <form data-test-drive-form><div class="dialog-top"><div><p class="eyebrow">الخطوة التالية</p><h2 id="test-drive-title">احجز تجربة قيادة</h2></div><button class="icon-button icon-button--dark" type="button" aria-label="إغلاق" data-test-drive-close><img src="assets/icons/close.svg" alt="" width="20" height="20"></button></div><p>اختر سيارتك وموقعك المفضل. يتوفر تمويل متوافق مع الشريعة الإسلامية عبر شركائنا.</p><label>الطراز المفضل<select name="model" required><option value="">اختر طرازاً</option><option>TANK 700</option><option>Wingle 7</option><option>HAVAL H9</option><option>HAVAL H7</option><option>HAVAL H6</option><option>HAVAL Jolion Max</option><option>TANK 300</option><option>TANK 500</option><option>POER Cannon PHEV</option></select></label><div class="form-row"><label>الدولة<select name="country" required><option selected>المملكة العربية السعودية</option><option>الإمارات العربية المتحدة</option><option>الكويت</option><option>قطر</option><option>البحرين</option><option>عُمان</option></select></label><label>المدينة<select name="city" required autocomplete="address-level2"><option value="">اختر مدينة</option><option>الرياض</option><option>جدة</option><option>الدمام / الخبر</option><option>مكة المكرمة</option><option>المدينة المنورة</option></select></label></div><label>الاسم الكامل<input name="name" required autocomplete="name" placeholder="الاسم الكامل"></label><label>البريد الإلكتروني<input name="email" required type="email" autocomplete="email" placeholder="name@example.com" dir="ltr"></label><label>رقم الجوال<input name="mobile" required type="tel" autocomplete="tel" placeholder="+966 5x xxx xxxx" dir="ltr"></label><label class="consent-row"><input name="consent" type="checkbox" required><span>أوافق على التواصل معي بشأن طلب تجربة القيادة.</span></label><button class="button" type="submit">إرسال الطلب</button><div class="form-success" hidden data-test-drive-success role="status"><strong>تم استلام طلبك</strong><span>سيتواصل معك فريق ADMC خلال يوم عمل واحد.</span><small lang="en" dir="ltr">ADMC will contact you within one working day.</small></div></form>
   </dialog>
 
   <section class="ask-overlay" aria-hidden="true" data-ask-overlay>
     <button class="ask-overlay__backdrop" type="button" aria-label="Close Ask GWM" data-ask-close></button>
     <div class="ask-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="ask-title">
-      <div class="ask-overlay__top"><p class="eyebrow" id="ask-title">Search GWM Saudi Arabia</p><button class="icon-button icon-button--dark" type="button" aria-label="Close Ask GWM" data-ask-close><img src="assets/icons/close.svg" alt="" width="20" height="20"></button></div>
-      <form class="ask-search" data-ask-form><img src="assets/icons/search.svg" alt="" width="22" height="22"><input name="question" autocomplete="off" placeholder="Ask about models, ownership, dealers…" aria-label="Ask GWM a question"><button class="button" type="submit">Send</button></form>
-      <div class="ask-tabs" role="tablist"><button type="button" role="tab" aria-selected="false" data-ask-tab="results">Results</button><button type="button" role="tab" aria-selected="true" data-ask-tab="ai">✦ Ask GWM</button></div>
-      <div class="ask-overlay__body" data-ask-log aria-live="polite"><div class="ask-intro"><p>Ask me anything about GWM vehicles, ownership or dealers in your market. Answers use the approved concept content available locally.</p><span>Suggested</span><div class="ask-suggestions"><button type="button" data-ask-suggestion>Which GWM hybrid models suit long-distance driving?</button><button type="button" data-ask-suggestion>Where is the nearest GWM dealer in Riyadh?</button><button type="button" data-ask-suggestion>How do I book a test drive?</button></div></div></div>
+      <div class="ask-overlay__top"><p class="eyebrow" id="ask-title">ابحث في جي دبليو إم السعودية</p><button class="icon-button icon-button--dark" type="button" aria-label="إغلاق اسأل جي دبليو إم" data-ask-close><img src="assets/icons/close.svg" alt="" width="20" height="20"></button></div>
+      <form class="ask-search" data-ask-form><img src="assets/icons/search.svg" alt="" width="22" height="22"><input name="question" autocomplete="off" placeholder="اسأل عن الطرازات أو الملكية أو الوكلاء…" aria-label="اسأل جي دبليو إم"><button class="button" type="submit">إرسال</button></form>
+      <div class="ask-tabs" role="tablist"><button type="button" role="tab" aria-selected="false" data-ask-tab="results">النتائج</button><button type="button" role="tab" aria-selected="true" data-ask-tab="ai">✦ اسأل جي دبليو إم</button></div>
+      <div class="ask-overlay__body" data-ask-log aria-live="polite"><div class="ask-intro"><p>اسأل عن سيارات جي دبليو إم أو الملكية أو الوكلاء في المملكة.</p><span>مقترحات</span><div class="ask-suggestions" lang="ar" dir="rtl"><button type="button" data-ask-suggestion>ما أفضل سيارة عائلية لسبع ركاب؟</button><button type="button" data-ask-suggestion>هل تانك 700 متوفرة للحجز المسبق؟</button><button type="button" data-ask-suggestion>ما استهلاك الوقود لهافال H9؟</button></div></div></div>
     </div>
   </section>
 </body>
