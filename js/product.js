@@ -17,6 +17,7 @@
   };
 
   const params = new URLSearchParams(window.location.search);
+  const isSaudi = params.get('market') === 'sa';
   const modelKey = models[params.get('model')] ? params.get('model') : 'h9';
   const model = models[modelKey];
   const imagePath = `assets/images/${model.image}`;
@@ -207,7 +208,7 @@
     const markReady = () => {
       duration = Math.min(Number.isFinite(designVideo.duration) ? designVideo.duration : 7.234, 7.234);
       loading?.classList.add('is-ready');
-      if (loading) loading.querySelector('strong').textContent = 'H9 design film ready';
+      if (loading) loading.querySelector('strong').textContent = isSaudi ? 'فيلم تصميم H9 جاهز' : 'H9 design film ready';
       measureFilm();
       updateFilm();
     };
@@ -257,7 +258,9 @@
     const cabinLabel = cabinExplorer.querySelector('[data-cabin-label]');
     const cabinHotspot = cabinExplorer.querySelector('[data-cabin-hotspot]');
     const cabinNote = cabinExplorer.querySelector('[data-cabin-note]');
-    const viewNames = { front: 'Front cabin', space: 'Flexible space', display: 'Central display' };
+    const viewNames = isSaudi
+      ? { front: 'المقصورة الأمامية', space: 'مساحة مرنة', display: 'الشاشة المركزية' }
+      : { front: 'Front cabin', space: 'Flexible space', display: 'Central display' };
     const viewOrder = Object.keys(viewNames);
     let activeCabinView = 'front';
 
@@ -331,10 +334,14 @@
     if (!text) return;
     askLog.querySelector('.ask-intro')?.remove();
     const user = document.createElement('div'); user.className = 'ask-message ask-message--user'; user.innerHTML = `<p>${text.replace(/[<>]/g, '')}</p>`; askLog.append(user);
-    let answer = `${fullName} is presented here with a ${model.powertrain} powertrain. Exact grades, specifications and availability must be confirmed with the local GWM market team.`;
-    if (/test drive|book/i.test(text)) answer = `Use any “Book a test drive” button on this page to start a request for the ${fullName}.`;
-    if (/availability|where|dealer/i.test(text)) answer = `Local availability for the ${fullName} varies by market. Choose your market from the globe menu for the relevant country experience.`;
-    const response = document.createElement('div'); response.className = 'ask-message ask-message--assistant'; response.innerHTML = `<p>${answer}</p><div class="ask-message__meta"><span>Source</span><strong>${fullName} concept page</strong></div>`; askLog.append(response); askLog.scrollTop = askLog.scrollHeight;
+    let answer = isSaudi
+      ? `يُعرض ${fullName} هنا بنظام دفع ${model.powertrain}. يجب تأكيد الفئات والمواصفات والتوافر مع وكيل جي دبليو إم المعتمد في المملكة.`
+      : `${fullName} is presented here with a ${model.powertrain} powertrain. Exact grades, specifications and availability must be confirmed with the local GWM market team.`;
+    if (/test drive|book|تجربة|حجز/i.test(text)) answer = isSaudi ? `استخدم زر «احجز تجربة قيادة» لبدء طلب تجربة ${fullName}.` : `Use any “Book a test drive” button on this page to start a request for the ${fullName}.`;
+    if (/availability|where|dealer|توفر|متاح|وكيل|أين/i.test(text)) answer = isSaudi ? `يختلف توفر ${fullName} حسب المنطقة والفئة. تواصل مع وكيل جي دبليو إم المعتمد في المملكة للتأكد.` : `Local availability for the ${fullName} varies by market. Choose your market from the globe menu for the relevant country experience.`;
+    const sourceLabel = isSaudi ? 'المصدر' : 'Source';
+    const sourceName = isSaudi ? `صفحة ${fullName} السعودية` : `${fullName} concept page`;
+    const response = document.createElement('div'); response.className = 'ask-message ask-message--assistant'; response.innerHTML = `<p>${answer}</p><div class="ask-message__meta"><span>${sourceLabel}</span><strong>${sourceName}</strong></div>`; askLog.append(response); askLog.scrollTop = askLog.scrollHeight;
   };
   document.querySelectorAll('[data-ask-gwm]').forEach(button => button.addEventListener('click', () => { askOverlay.classList.add('is-open'); askOverlay.setAttribute('aria-hidden', 'false'); document.body.classList.add('ask-open'); askInput.focus(); }));
   document.querySelectorAll('[data-ask-close]').forEach(button => button.addEventListener('click', closeAsk));

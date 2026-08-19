@@ -9,6 +9,19 @@
   let lastFocused = null;
   let toastTimer;
 
+  const introMarket = document.body.classList.contains('market-saudi') ? 'saudi' : 'uae';
+  const introSessionKey = `gwm-home-intro-seen:${introMarket}`;
+  let introSeen = false;
+  try {
+    introSeen = window.sessionStorage.getItem(introSessionKey) === 'true';
+    if (!introSeen && document.body.classList.contains('intro-active')) {
+      window.sessionStorage.setItem(introSessionKey, 'true');
+    }
+  } catch (_) {
+    introSeen = false;
+  }
+  if (introSeen) document.body.classList.remove('intro-active');
+
   if (document.body.classList.contains('intro-active')) {
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
     window.scrollTo(0, 0);
