@@ -135,20 +135,31 @@
     }, 1000);
   };
 
-  header.inert = true;
-  setInert(introIdentity, true);
-  setInert(introContent, true);
-  setInert(introBelowFold, true);
-  if (reducedMotion) {
-    completeIntro();
+  const introEnabled = document.body.classList.contains('intro-active');
+  if (introEnabled) {
+    header.inert = true;
+    setInert(introIdentity, true);
+    setInert(introContent, true);
+    setInert(introBelowFold, true);
+    if (reducedMotion) {
+      completeIntro();
+    } else {
+      window.setTimeout(revealIdentity, 2000);
+      window.setTimeout(revealHeader, 6000);
+      window.setTimeout(completeIntro, 8000);
+    }
   } else {
-    window.setTimeout(revealIdentity, 2000);
-    window.setTimeout(revealHeader, 6000);
-    window.setTimeout(completeIntro, 8000);
+    header.inert = false;
+    setInert(introIdentity, false);
+    setInert(introContent, false);
+    setInert(introBelowFold, false);
+    introFinished = true;
+    startCarousel();
   }
 
   const brandTabs = [...document.querySelectorAll('[data-brand]')];
   const vehicleCards = [...document.querySelectorAll('[data-vehicle-brand]')];
+  const vehicleGrid = document.querySelector('#vehicle-grid');
   const showBrand = (tab, moveFocus = false) => {
     const brand = tab.dataset.brand;
     brandTabs.forEach(item => {
@@ -157,8 +168,10 @@
       item.tabIndex = isActive ? 0 : -1;
     });
     vehicleCards.forEach(card => { card.hidden = card.dataset.vehicleBrand !== brand; });
-    const grid = document.querySelector('#vehicle-grid');
-    if (grid) grid.setAttribute('aria-labelledby', tab.id);
+    if (vehicleGrid) {
+      vehicleGrid.setAttribute('aria-labelledby', tab.id);
+      vehicleGrid.removeAttribute('aria-label');
+    }
     if (moveFocus) tab.focus();
   };
   brandTabs.forEach((tab, index) => {
@@ -174,6 +187,10 @@
       showBrand(brandTabs[nextIndex], true);
     });
   });
+  const initialBrand = vehicleGrid?.dataset.initialBrand;
+  if (initialBrand) {
+    vehicleCards.forEach(card => { card.hidden = card.dataset.vehicleBrand !== initialBrand; });
+  }
 
   const powertrainExplorer = document.querySelector('[data-powertrain-explorer]');
   if (powertrainExplorer) {
@@ -188,8 +205,9 @@
         tab.tabIndex = isActive ? 0 : -1;
         if (isActive && moveFocus) tab.focus();
       });
-      powertrainPanels.forEach((panel, panelIndex) => {
-        const isActive = panelIndex === activePowertrain;
+      const activePanelKey = powertrainTabs[activePowertrain]?.dataset.powertrainTab;
+      powertrainPanels.forEach(panel => {
+        const isActive = panel.dataset.powertrainPanel === activePanelKey;
         panel.hidden = !isActive;
         panel.classList.toggle('is-active', isActive);
       });
@@ -293,8 +311,9 @@
   const askForm = document.querySelector('[data-ask-form]');
   const askInput = askForm.querySelector('input[name="question"]');
   const askLog = document.querySelector('[data-ask-log]');
+  const isSaudiMarket = document.body.classList.contains('market-saudi');
   let askLastFocused = null;
-  const askAnswers = [
+  const defaultAskAnswers = [
     {
       match: /hybrid|hev|phev|electric|bev|powertrain/i,
       answer: 'The concept range includes HEV and PHEV choices across selected HAVAL, TANK and POER models, alongside battery-electric mobility. Exact availability varies by Middle East market.',
@@ -325,6 +344,19 @@
     source: 'GWM Middle East concept',
     follow: 'Browse all vehicles'
   };
+  const saudiAskAnswers = [
+    { match: /عائل|سبع|7/, answer: 'تضم مجموعة جي دبليو إم خيارات عائلية متعددة. يرجى مراجعة صفحة كل طراز للتأكد من عدد المقاعد والمواصفات المعتمدة في المملكة.', source: 'مجموعة سيارات جي دبليو إم السعودية', follow: 'استعرض جميع السيارات' },
+    { match: /تانك\s*700|حجز مسبق/, answer: 'يظهر تانك 700 في هذا النموذج كطراز متاح للحجز المسبق. سيتم تأكيد التوفر النهائي والفئات عبر الموزع الرسمي في المملكة.', source: 'صفحة جي دبليو إم السعودية', follow: 'استكشف طرازات تانك' },
+    { match: /استهلاك|وقود|H9|هافال/, answer: 'تختلف أرقام استهلاك الوقود حسب الفئة والمواصفات وظروف القيادة. سيُنشر الرقم المعتمد لهافال H9 من المصدر المحلي الرسمي.', source: 'بيانات الطراز المحلي', follow: 'استعرض جميع السيارات' },
+    { match: /تجربة|قيادة|حجز/, answer: 'يمكنك بدء طلب تجربة القيادة من رأس الصفحة أو من أي صفحة طراز، ثم اختيار السيارة والمدينة وإضافة بيانات التواصل.', source: 'رحلة حجز تجربة القيادة', follow: 'احجز تجربة قيادة' },
+    { match: /وكيل|صيانة|ضمان|مالك/, answer: 'تجمع عناية جي دبليو إم خدمات الصيانة والضمان ودعم المُلّاك، مع ربط التفاصيل المحلية بالمصادر المعتمدة في المملكة.', source: 'عناية جي دبليو إم', follow: 'دعم المُلّاك' }
+  ];
+  const askAnswers = isSaudiMarket ? saudiAskAnswers : defaultAskAnswers;
+  const activeFallbackAnswer = isSaudiMarket ? {
+    answer: 'يمكنني مساعدتك في استكشاف سيارات جي دبليو إم وأنظمة الدفع وخدمات المُلّاك وتجربة القيادة في المملكة.',
+    source: 'جي دبليو إم السعودية',
+    follow: 'استعرض جميع السيارات'
+  } : fallbackAnswer;
   const openAsk = () => {
     askLastFocused = document.activeElement;
     askOverlay.classList.add('is-open');
@@ -347,14 +379,14 @@
     if (extra) {
       const meta = document.createElement('div');
       meta.className = 'ask-message__meta';
-      meta.innerHTML = `<span>Source</span><strong>${extra.source}</strong>`;
+      meta.innerHTML = `<span>${isSaudiMarket ? 'المصدر' : 'Source'}</span><strong>${extra.source}</strong>`;
       const follow = document.createElement('button');
       follow.type = 'button';
       follow.textContent = extra.follow;
       follow.addEventListener('click', () => {
-        if (/test drive/i.test(extra.follow)) { closeAsk(); openTestDrive(); }
-        else if (/owner/i.test(extra.follow)) { closeAsk(); document.querySelector('#owners')?.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' }); }
-        else window.location.href = /TANK/i.test(extra.follow) ? 'vehicles.html?brand=TANK' : 'vehicles.html';
+        if (/test drive|تجربة قيادة/i.test(extra.follow)) { closeAsk(); openTestDrive(); }
+        else if (/owner|المُلّاك/i.test(extra.follow)) { closeAsk(); document.querySelector('#owners')?.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth' }); }
+        else window.location.href = /TANK|تانك/i.test(extra.follow) ? 'vehicles.html?brand=TANK' : 'vehicles.html';
       });
       meta.append(follow);
       row.append(meta);
@@ -369,10 +401,10 @@
     appendAskMessage('user', text);
     const thinking = document.createElement('div');
     thinking.className = 'ask-thinking';
-    thinking.innerHTML = '<i></i><span>Ask GWM is thinking…</span>';
+    thinking.innerHTML = `<i></i><span>${isSaudiMarket ? 'جي دبليو إم تفكر…' : 'Ask GWM is thinking…'}</span>`;
     askLog.append(thinking);
     askLog.scrollTop = askLog.scrollHeight;
-    const selected = askAnswers.find(item => item.match.test(text)) || fallbackAnswer;
+    const selected = askAnswers.find(item => item.match.test(text)) || activeFallbackAnswer;
     window.setTimeout(() => {
       thinking.remove();
       appendAskMessage('assistant', selected.answer, selected);
@@ -393,5 +425,5 @@
     toastTimer = window.setTimeout(() => { toast.hidden = true; }, 4200);
   }
   document.querySelectorAll('[data-placeholder-action]').forEach(button => button.addEventListener('click', () => showToast(button.dataset.placeholderAction)));
-  document.querySelector('[data-language-toggle]').addEventListener('click', () => showToast('Arabic content is pending approved translation.'));
+  document.querySelector('[data-language-toggle]').addEventListener('click', () => showToast(isSaudiMarket ? 'النسخة الإنجليزية قيد الإعداد.' : 'Arabic content is pending approved translation.'));
 })();
